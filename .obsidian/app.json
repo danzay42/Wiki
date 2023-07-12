@@ -1,0 +1,10 @@
+{
+  "livePreview": false,
+  "spellcheckLanguages": [
+    "en-US",
+    "ru"
+  ],
+  "attachmentFolderPath": "_attachments",
+  "promptDelete": false,
+  "newFileLocation": "current"
+}
