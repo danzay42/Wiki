@@ -57,7 +57,6 @@
 - Умение пользоваться библиотеками для подключения к IS4
 
 # Python
-
 - asyncio
 	- gather
 	- async / await
