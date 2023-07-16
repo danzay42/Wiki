@@ -1,0 +1,12 @@
+
+- Tiling window manager
+	- i3
+	- leftwm (rust)
+	- qtile (python)
+	- awesome
+- status bar
+	- polybar
+	- xmobar
+- super search
+	- rofi
+	- dmenu

@@ -75,3 +75,7 @@
 	- bindings
 	- queues
 - SQLAlchemy
+
+# more
+#Test-Driven_Development
+#red-green-refactor
