@@ -1,12 +1,38 @@
+https://command-not-found.com/
 
 - Tiling window manager
 	- i3
 	- leftwm (rust)
 	- qtile (python)
 	- awesome
+- tiling window manager compositor
+	- xcompmgr
+	- picom
 - status bar
-	- polybar
+	- **polybar**
 	- xmobar
 - super search
-	- rofi
+	- **rofi**
 	- dmenu
+- wallpapers
+	- nitrogen
+	- **feh**
+- screenshots
+	- **flameshot**
+	- scrot
+- sound sever
+	- PulseAudio
+	- **PipeWire**
+- volume control
+	- amixer
+- keyboard layout
+	- setxkbmap
+- brightness
+	- light
+	- clight
+- network
+	- network manager (nmtui)
+	- wpa_supplicant
+	- iwd
+- notify
+	- dunst
