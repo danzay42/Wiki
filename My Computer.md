@@ -1,3 +1,4 @@
+
 https://command-not-found.com/
 
 - Tiling window manager
@@ -36,3 +37,7 @@ https://command-not-found.com/
 	- iwd
 - notify
 	- dunst
+- security
+	- su
+	- sudo
+	- doas
