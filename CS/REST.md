@@ -1,4 +1,5 @@
 
+# REST Architecture
 [Architectural Styles and the Design of Network-based Software Architectures](https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm)
 
 1. Client-Server
@@ -15,7 +16,8 @@ A(Клиенты) <--> B(Транспорт) <--> C(Ресурсы)
 
 > Обычно под REST API подразумевают транспорт в виде: [[HTTP]] + JSON
 
-# Best Practice
+# REST API
+## Best Practice
 - конечные точки URL (endpoints) - существительные (ресурсы) ```/resource/{id}```
 - множественное число ```/resources```
 - документация ([Swagger/OpenAPI](https://swagger.io/))
@@ -27,7 +29,7 @@ A(Клиенты) <--> B(Транспорт) <--> C(Ресурсы)
 - принимать/отдавать всегда один и тот же формат упаковки, например json
 - сложные запросы ```/resource/{id}/property```
 
-# CRUD + HTTP
+## CRUD + HTTP
 - Create - POST
 - Read - GET
 - Update - PUT
