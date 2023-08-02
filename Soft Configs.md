@@ -1,0 +1,268 @@
+
+https://command-not-found.com/
+
+# Packages
+---
+
+#### *Files*
+- cat -> [bat](https://github.com/sharkdp/bat)
+- grep -> [rg](https://github.com/BurntSushi/ripgrep) -> [batgrep](https://github.com/eth-p/bat-extras/blob/master/doc/batgrep.md)
+- diff -> -> [difft](https://github.com/Wilfred/difftastic) -> [batdiff](https://github.com/eth-p/bat-extras/blob/master/doc/batdiff.md)
+- fzf
+
+#### *File System*
+- find -> [fd](https://github.com/sharkdp/fd)
+- ls -> [exa](https://github.com/ogham/exa) | [lsd](https://github.com/lsd-rs/lsd)
+- du -> [dust](https://github.com/bootandy/dust)
+- tree -> [broot](https://github.com/Canop/broot)
+- [mc](https://midnight-commander.org/wiki)
+- cd -> zoxide
+
+#### *Disk*
+- df -> [dysk](https://github.com/Canop/dysk)
+- gparted
+
+#### *Docs*
+- man -> info -> [batman](https://github.com/eth-p/bat-extras/blob/master/doc/batman.md)
+- tldr
+[*Git*](https://git-scm.com/book/en/v2)
+- [lazygit](https://github.com/jesseduffield/lazygit)
+- [gitui](https://github.com/extrawurst/gitui)
+
+#### *Network*
+- wget -> curl -> [httpie](https://httpie.io/docs/cli/main-features)
+- nslookup
+- nc (netcat)
+- dig -> [dog](https://github.com/ogham/dog)
+
+- network manager (nmtui)
+- wpa_supplicant
+- iwd
+
+#### *Processes*
+- ps -> [procs](https://github.com/dalance/procs)
+- top -> htop
+- nvtop
+- [btm](https://github.com/ClementTsang/bottom)
+
+#### *Power*
+- powertop
+- s-tui
+- [tlp & tlp-rdw](https://linrunner.de/tlp/index.html)
+- [auto-cpufreq](https://github.com/AdnanHodzic/auto-cpufreq)
+
+#### *Benchmark*
+- time -> [hyperfine](https://github.com/sharkdp/hyperfine)
+
+#### *Terminal*
+- [alacritty](https://github.com/alacritty/alacritty)
+- kitty
+- *Prompt*
+	- [starship](https://starship.rs/)
+- *Tabs multiplexer*
+	- tmux
+	- zellif
+
+#### *SUDO*
+- su
+- sudo
+- doas
+
+---
+- pass
+- qbittorrent
+- [entr](https://github.com/clibs/entr) (event notify test runner)
+- [mprocs](https://github.com/pvolok/mprocs)
+- [bat-extras](https://github.com/eth-p/bat-extras/tree/master)
+- cmp
+- tput
+- ipython | bpython || irust | evcxr_jupyter | cargo-info
+- tokei (program to estemate programm languages is folder)
+- atuin (best serch for command history)
+- eva (calculator)
+
+# Tiling window manager
+---
+
+- [i3](https://i3wm.org/)
+- [qtile](https://qtile.org/) (python)
+- awesome
+- leftwm (rust)
+
+#### *Compositor*
+- xcompmgr
+- picom
+
+#### *Status Bar*
+- **polybar**
+- xmobar
+
+#### *Super Search*
+- **rofi**
+- dmenu
+
+#### *Wallpapers*
+- nitrogen
+- **feh**
+
+#### *Screenshots*
+- **flameshot**
+- scrot
+
+#### *Sound Server*
+- PulseAudio
+- **PipeWire**
+
+#### *Volume Control*
+- amixer
+
+#### *Keyboard Layout*
+- setxkbmap
+
+#### *Brightness*
+- light
+- clight
+
+#### *Notify*
+- dunst
+
+# VI
+---
+
+## Plugins & utils:
+- LSP
+- tree-sitter (быстрый и правильный способо подстветки кода)
+- Tagbar (навигация внутри файла)
+- NERDTree
+- Telescope (use: ripgrep, fzf)
+- [AstroNvim](https://astronvim.github.io/)
+
+## Configs
+- [kickstart](https://github.com/nvim-lua/kickstart.nvim)
+- [NvChad](https://nvchad.com/)
+- [LunarVim](https://www.lunarvim.org/)
+- [AstroNvim](https://astronvim.github.io/)
+
+## Troubleshooting
+on Wayland install wl-clipboard
+
+[Nerd Fonts](https://github.com/ryanoasis/nerd-fonts)
+```shell
+git clone --depth 1 https://github.com/ryanoasis/nerd-fonts.git
+cd nerd-fonts
+./install.sh
+cd ../
+rm -rf nerd-fonts
+```
+
+# Configs
+---
+
+## Gnome
+
+```shell
+gsettings set org.gnome.desktop.interface color-scheme prefer-dark
+gsettings set org.gnome.desktop.interface enable-hot-corners false
+
+gsettings set org.gnome.desktop.session idle-delay 1800
+gsettings set org.gnome.settings-daemon.plugins.power power-button-action "interactive"
+gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-battery-timeout 1200
+gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type 1200
+
+shortcut_gset=org.gnome.settings-daemon.plugins.media-keys
+shortcut_custom=/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/
+
+gsettings set ${shortcut_gset}.custom-keybinding:${shortcut_custom} binding '<Super>Return'
+gsettings set ${shortcut_gset}.custom-keybinding:${shortcut_custom} name 'Terminal'
+gsettings set ${shortcut_gset}.custom-keybinding:${shortcut_custom} command 'alacritty'
+gsettings set ${shortcut_gset} custom-keybindings "['${shortcut_custom}']"
+
+gsettings set org.gnome.desktop.input-sources per-window true
+gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', 'ru')]"
+```
+
+### Extensions
+- [Dash to Dock](https://github.com/micheleg/dash-to-dock)
+- [Vitals](https://github.com/corecoding/Vitals)
+- [AppIndicator and KStatusNotifireItem](https://github.com/ubuntu/gnome-shell-extension-appindicator)
+- [Removable Drive Menu](https://gitlab.gnome.org/GNOME/gnome-shell-extensions)
+- [Clipboard Indicator](https://github.com/Tudmotu/gnome-shell-extension-clipboard-indicator)
+```shell
+gnome-extensions enable clipboard-indicator@tudmotu.com
+gnome-extensions enable appindicatorsupport@rgcjonas.gmail.com
+gnome-extensions enable Vitals@CoreCoding.com
+gnome-extensions enable dash-to-dock@micxgx.gmail.com
+gnome-extensions enable drive-menu@gnome-shell-extensions.gcampax.github.com
+```
+
+## Locale
+
+```shell
+sudo echo "ru_RU.UTF-8 UTF-8" >> /etc/locale.gen
+sudo locale-gen
+```
+
+## Misc USB visibility
+`sudo usermod -aG dialout $USER`
+
+## Arch
+
+### Bluetooth
+```shell
+sudo systemctl enable bluetooth.service
+sudo systemctl start bluetooth.service
+```
+
+### Sound & Microphone
+[Advanced Linux Sound Architecture/Troubleshooting](https://wiki.archlinux.org/title/Advanced_Linux_Sound_Architecture)
+```shell
+sudo pacman -S sof-firmware
+```
+
+### Fonts
+```shell
+sudo pacman -S noto-fonts
+```
+
+### NVIDIA
+```shell
+sudo pacman -S nvidia
+```
+or for `geforce gtx 780m`
+```shell
+yay -S nvidia-470xx-dkms
+```
+
+### yay AUR Helper
+```shell
+sudo pacman -S --needed base-devel
+git clone https://aur.archlinux.org/yay-git.git
+cd yay-git
+makepkg -si
+```
+
+### Gnome
+```shell
+sudo pacman -S gnome-themes-extra
+yay -S gnome-browser-connector
+sudo pacman -R gnome-boxes cheese gnome-contacts gnome-maps gnome-photos gnome-music totem gnome-weather epiphany
+```
+
+## Fedora
+
+[rpm fusion](https://rpmfusion.org/)
+```shell
+sudo dnf install gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel
+
+sudo dnf install lame\* --exclude=lame-devel
+sudo dnf group upgrade --with-optional Multimedia
+```
+
+### DNF
+Edit `/etc/dnf/dnf.conf`
+```
+skip_if_unavailable=True
+fastestmirror=True
+max_parallel_downloads=10
+defaultyes=True
+```
