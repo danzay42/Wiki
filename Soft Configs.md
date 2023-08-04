@@ -1,85 +1,99 @@
 
 https://command-not-found.com/
 
-# Packages
+# POSIX System
 ---
 
-#### *Files*
-- cat -> [bat](https://github.com/sharkdp/bat)
-- grep -> [rg](https://github.com/BurntSushi/ripgrep) -> [batgrep](https://github.com/eth-p/bat-extras/blob/master/doc/batgrep.md)
-- diff -> -> [difft](https://github.com/Wilfred/difftastic) -> [batdiff](https://github.com/eth-p/bat-extras/blob/master/doc/batdiff.md)
-- fzf
+- uname
+- lsblk | lscpu | lspci | lsusb | ...
+- whereis | which
+- cal | date
 
-#### *File System*
+## Files
+- cat | tac | split -> [bat](https://github.com/sharkdp/bat)
+- head | tail | cut
+- grep -> [rg](https://github.com/BurntSushi/ripgrep) -> [batgrep](https://github.com/eth-p/bat-extras/blob/master/doc/batgrep.md)
+- diff | cmp -> [difft](https://github.com/Wilfred/difftastic) -> [batdiff](https://github.com/eth-p/bat-extras/blob/master/doc/batdiff.md)
+- wc
+- sed -> awk
+- touch | cp | mv | rm | mkdir | rmdir
+- echo | printf
+
+## File System
 - find -> [fd](https://github.com/sharkdp/fd)
 - ls -> [exa](https://github.com/ogham/exa) | [lsd](https://github.com/lsd-rs/lsd)
-- du -> [dust](https://github.com/bootandy/dust)
 - tree -> [broot](https://github.com/Canop/broot)
 - [mc](https://midnight-commander.org/wiki)
 - cd -> zoxide
 
-#### *Disk*
-- df -> [dysk](https://github.com/Canop/dysk)
-- gparted
+## Permissions
+- su -> doas -> sudo
+- chmod | chown | chgrp
 
-#### *Docs*
-- man -> info -> [batman](https://github.com/eth-p/bat-extras/blob/master/doc/batman.md)
-- tldr
-[*Git*](https://git-scm.com/book/en/v2)
-- [lazygit](https://github.com/jesseduffield/lazygit)
-- [gitui](https://github.com/extrawurst/gitui)
-
-#### *Network*
-- wget -> curl -> [httpie](https://httpie.io/docs/cli/main-features)
-- nslookup
-- nc (netcat)
-- dig -> [dog](https://github.com/ogham/dog)
-
-- network manager (nmtui)
-- wpa_supplicant
-- iwd
-
-#### *Processes*
+## Processes
+- kill | killall
 - ps -> [procs](https://github.com/dalance/procs)
-- top -> htop
+- top -> htop -> [btm](https://github.com/ClementTsang/bottom)
 - nvtop
-- [btm](https://github.com/ClementTsang/bottom)
+- [mprocs](https://github.com/pvolok/mprocs)
 
-#### *Power*
+## Power
 - powertop
 - s-tui
 - [tlp & tlp-rdw](https://linrunner.de/tlp/index.html)
 - [auto-cpufreq](https://github.com/AdnanHodzic/auto-cpufreq)
 
-#### *Benchmark*
+## Disk
+- du -> [dust](https://github.com/bootandy/dust)
+- df -> [dysk](https://github.com/Canop/dysk)
+- gparted
+
+## Network
+- wget -> curl -> [httpie](https://httpie.io/docs/cli/main-features)
+- ping
+- nslookup
+- nc (netcat)
+- dig -> [dog](https://github.com/ogham/dog)
+### Managers
+- network manager (nmtui)
+- wpa_supplicant
+- iwd
+
+## Super Search
+- fzf -> dmenu -> [rofi](https://github.com/davatorium/rofi)
+
+## Docs
+- man | less -> info -> [batman](https://github.com/eth-p/bat-extras/blob/master/doc/batman.md)
+- tldr
+
+
+# Programming
+---
+
+- [tokei](https://github.com/XAMPPRocky/tokei)
+
+## Benchmark
 - time -> [hyperfine](https://github.com/sharkdp/hyperfine)
 
-#### *Terminal*
-- [alacritty](https://github.com/alacritty/alacritty)
-- kitty
-- *Prompt*
-	- [starship](https://starship.rs/)
-- *Tabs multiplexer*
-	- tmux
-	- zellif
+## [Git](https://git-scm.com/book/en/v2)
+- [lazygit](https://github.com/jesseduffield/lazygit)
+- [gitui](https://github.com/extrawurst/gitui)
 
-#### *SUDO*
-- su
-- sudo
-- doas
+## Bash
+- xargs
+- seq
+- shuf
+- test
 
----
-- pass
-- qbittorrent
-- [entr](https://github.com/clibs/entr) (event notify test runner)
-- [mprocs](https://github.com/pvolok/mprocs)
-- [bat-extras](https://github.com/eth-p/bat-extras/tree/master)
-- cmp
-- tput
-- ipython | bpython || irust | evcxr_jupyter | cargo-info
-- tokei (program to estemate programm languages is folder)
-- atuin (best serch for command history)
-- eva (calculator)
+## Python
+- ipython
+- bpython
+
+## Rust
+- irust
+- [Evcxr](https://github.com/evcxr/evcxr)
+- cargo-info
+
 
 # Tiling window manager
 ---
@@ -89,47 +103,68 @@ https://command-not-found.com/
 - awesome
 - leftwm (rust)
 
-#### *Compositor*
+## Compositor
 - xcompmgr
 - picom
 
-#### *Status Bar*
+## Monitor
+- xrandr
+
+## Status Bar
 - **polybar**
 - xmobar
 
-#### *Super Search*
-- **rofi**
-- dmenu
-
-#### *Wallpapers*
+## Wallpapers
 - nitrogen
 - **feh**
 
-#### *Screenshots*
+## Screenshots
 - **flameshot**
 - scrot
 
-#### *Sound Server*
+## Sound Server
 - PulseAudio
 - **PipeWire**
 
-#### *Volume Control*
+## Volume Control
 - amixer
 
-#### *Keyboard Layout*
+## Keyboard Layout
 - setxkbmap
 
-#### *Brightness*
+## Brightness
 - light
 - clight
 
-#### *Notify*
+## Notify
 - dunst
 
-# VI
+
+# Soft
 ---
 
-## Plugins & utils:
+- pass
+- qbittorrent
+- [entr](https://github.com/clibs/entr) (event notify test runner)
+- [bat-extras](https://github.com/eth-p/bat-extras/tree/master)
+- atuin (best serch for command history)
+- eva (calculator)
+
+## Terminal
+- sh -> bash -> zsh -> [fish](https://fishshell.com/)
+- [alacritty](https://github.com/alacritty/alacritty) | kitty
+- *Prompt*
+	- [starship](https://starship.rs/)
+- *Tabs multiplexer*
+	- tmux
+	- zellif
+- tput
+- history
+
+## Text Editor (VI)
+- nano -> vi -> vim -> [nvim](https://neovim.io/)
+
+### Plugins & utils:
 - LSP
 - tree-sitter (быстрый и правильный способо подстветки кода)
 - Tagbar (навигация внутри файла)
@@ -137,15 +172,14 @@ https://command-not-found.com/
 - Telescope (use: ripgrep, fzf)
 - [AstroNvim](https://astronvim.github.io/)
 
-## Configs
+### Configs
 - [kickstart](https://github.com/nvim-lua/kickstart.nvim)
 - [NvChad](https://nvchad.com/)
 - [LunarVim](https://www.lunarvim.org/)
 - [AstroNvim](https://astronvim.github.io/)
 
-## Troubleshooting
+### Troubleshooting
 on Wayland install wl-clipboard
-
 [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts)
 ```shell
 git clone --depth 1 https://github.com/ryanoasis/nerd-fonts.git
@@ -155,11 +189,11 @@ cd ../
 rm -rf nerd-fonts
 ```
 
+
 # Configs
 ---
 
 ## Gnome
-
 ```shell
 gsettings set org.gnome.desktop.interface color-scheme prefer-dark
 gsettings set org.gnome.desktop.interface enable-hot-corners false
@@ -196,7 +230,6 @@ gnome-extensions enable drive-menu@gnome-shell-extensions.gcampax.github.com
 ```
 
 ## Locale
-
 ```shell
 sudo echo "ru_RU.UTF-8 UTF-8" >> /etc/locale.gen
 sudo locale-gen
