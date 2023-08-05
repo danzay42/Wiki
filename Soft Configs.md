@@ -4,13 +4,14 @@ https://command-not-found.com/
 # POSIX System
 ---
 
-- uname
-- lsblk | lscpu | lspci | lsusb | ...
+- uname | w
+- lsblk | lscpu | lspci | lsusb |...
 - whereis | which
 - cal | date
 
 ## Files
 - cat | tac | split -> [bat](https://github.com/sharkdp/bat)
+- xxd
 - head | tail | cut
 - grep -> [rg](https://github.com/BurntSushi/ripgrep) -> [batgrep](https://github.com/eth-p/bat-extras/blob/master/doc/batgrep.md)
 - diff | cmp -> [difft](https://github.com/Wilfred/difftastic) -> [batdiff](https://github.com/eth-p/bat-extras/blob/master/doc/batdiff.md)
@@ -18,6 +19,16 @@ https://command-not-found.com/
 - sed -> awk
 - touch | cp | mv | rm | mkdir | rmdir
 - echo | printf
+- zip | gzip | bzip -> tar
+- ln
+	```shell
+	# softlink (create new inode)
+	ln -s original_file symbolic_link_file
+	
+	# hardlink (use same inode)
+	ln orginal_file hardlink_file
+	```
+- rsync
 
 ## File System
 - find -> [fd](https://github.com/sharkdp/fd)
@@ -26,9 +37,30 @@ https://command-not-found.com/
 - [mc](https://midnight-commander.org/wiki)
 - cd -> zoxide
 
+### Disk
+- du -> [dust](https://github.com/bootandy/dust)
+- df -> [dysk](https://github.com/Canop/dysk)
+- fdisk -> cfdisk | gdisk -> parted -> gparted
+
+### Configs
+- tune2fs
+- blkid
+`/etc/fstab` - монтирование файловой системы
+`/etc/mke2fs.conf`
+
+## Core
+- modprobe
+- modinfo
+> Правила подгрузи модулей ядра (udev):
+> `/usr/lib/udev/.` -> `/etc/udev/rules.d/.`
+> Загрузка при включении ядра: `/etc/modules-load.d/*.conf`
+> Условия для модуля: `/etc/modprob.d/*.conf`
+
 ## Permissions
 - su -> doas -> sudo
-- chmod | chown | chgrp
+- chmod | chown | chgrp | ...
+- chroot | chmod | chcpu | ... -> containers (docker)
+- **SELinux**
 
 ## Processes
 - kill | killall
@@ -43,29 +75,32 @@ https://command-not-found.com/
 - [tlp & tlp-rdw](https://linrunner.de/tlp/index.html)
 - [auto-cpufreq](https://github.com/AdnanHodzic/auto-cpufreq)
 
-## Disk
-- du -> [dust](https://github.com/bootandy/dust)
-- df -> [dysk](https://github.com/Canop/dysk)
-- gparted
-
 ## Network
 - wget -> curl -> [httpie](https://httpie.io/docs/cli/main-features)
-- ping
+- ping | traceroute
 - nslookup
 - nc (netcat)
 - dig -> [dog](https://github.com/ogham/dog)
-### Managers
-- network manager (nmtui)
-- wpa_supplicant
-- iwd
+- iwd | wpa_supplicant | nmcli -> nmtui
+- ssh | scp | sftp
+
+## Network File System
+- smb (sumba)
+- nfs (nfs-utils)
 
 ## Super Search
 - fzf -> dmenu -> [rofi](https://github.com/davatorium/rofi)
 
 ## Docs
-- man | less -> info -> [batman](https://github.com/eth-p/bat-extras/blob/master/doc/batman.md)
+- man | less | help -> info -> [batman](https://github.com/eth-p/bat-extras/blob/master/doc/batman.md)
 - tldr
+- aprops (search manual pages)
 
+## Scheduler
+- at | atq | atrm
+- batch
+- cron | anacron
+- systemd.timer | systemd-run
 
 # Programming
 ---
@@ -84,6 +119,7 @@ https://command-not-found.com/
 - seq
 - shuf
 - test
+- watch
 
 ## Python
 - ipython
@@ -122,8 +158,9 @@ https://command-not-found.com/
 - **flameshot**
 - scrot
 
-## Sound Server
+## Sound
 - PulseAudio
+- ALSA
 - **PipeWire**
 
 ## Volume Control
@@ -144,7 +181,7 @@ https://command-not-found.com/
 ---
 
 - pass
-- qbittorrent
+- qbittorrent | fragments
 - [entr](https://github.com/clibs/entr) (event notify test runner)
 - [bat-extras](https://github.com/eth-p/bat-extras/tree/master)
 - atuin (best serch for command history)
@@ -162,7 +199,8 @@ https://command-not-found.com/
 - history
 
 ## Text Editor (VI)
-- nano -> vi -> vim -> [nvim](https://neovim.io/)
+- nano
+- vi -> vim -> [nvim](https://neovim.io/)
 
 ### Plugins & utils:
 - LSP
@@ -170,28 +208,102 @@ https://command-not-found.com/
 - Tagbar (навигация внутри файла)
 - NERDTree
 - Telescope (use: ripgrep, fzf)
-- [AstroNvim](https://astronvim.github.io/)
 
 ### Configs
 - [kickstart](https://github.com/nvim-lua/kickstart.nvim)
 - [NvChad](https://nvchad.com/)
-- [LunarVim](https://www.lunarvim.org/)
 - [AstroNvim](https://astronvim.github.io/)
+- [LunarVim](https://www.lunarvim.org/)
 
 ### Troubleshooting
-on Wayland install wl-clipboard
-[Nerd Fonts](https://github.com/ryanoasis/nerd-fonts)
-```shell
-git clone --depth 1 https://github.com/ryanoasis/nerd-fonts.git
-cd nerd-fonts
-./install.sh
-cd ../
-rm -rf nerd-fonts
-```
+- on Wayland install wl-clipboard
+- [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts)
+	```shell
+	git clone --depth 1 https://github.com/ryanoasis/nerd-fonts.git
+	cd nerd-fonts
+	./install.sh
+	cd ../
+	rm -rf nerd-fonts
+	```
 
 
 # Configs
 ---
+
+```shell
+# Locale
+sudo echo "ru_RU.UTF-8 UTF-8" >> /etc/locale.gen
+sudo locale-gen
+
+# Misc USB visibility
+sudo usermod -aG dialout $USER
+```
+
+## Arch
+
+```shell
+# Bluetooth
+sudo pacman -S bluez-plugins bluez-util
+sudo systemctl enable bluetooth.service
+sudo systemctl start bluetooth.service
+
+# Fonts
+sudo pacman -S noto-fonts
+
+# ALSA firmware
+sudo pacman -S sof-firmware
+
+# Graphics
+# sudo pacman -S nvidia
+# Nvidia Geforce gtx 780m
+yay -S nvidia-470xx-dkms
+
+# Video Acceleration (VA) API for Linux
+sudo pacman -S libva libva-utils
+```
+
+[Advanced Linux Sound Architecture/Troubleshooting](https://wiki.archlinux.org/title/Advanced_Linux_Sound_Architecture)
+
+### Система межпроцессного взаимодействия
+libdbus -> dbus-brocker
+```shell
+sudo pacman -S dbus-brocker
+sudo systemctl --global enable dbus-broker.service
+```
+
+### AUR Helper
+```shell
+sudo pacman -S --needed base-devel
+git clone https://aur.archlinux.org/yay-git.git
+cd yay-git
+makepkg -si
+```
+
+### Gnome
+```shell
+sudo pacman -S gnome-themes-extra gnome-firmware
+yay -S gnome-browser-connector
+sudo pacman -R gnome-boxes cheese gnome-contacts gnome-maps gnome-photos gnome-music totem gnome-weather epiphany
+```
+
+## Fedora
+
+[rpm fusion](https://rpmfusion.org/)
+```shell
+sudo dnf install gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel
+
+sudo dnf install lame\* --exclude=lame-devel
+sudo dnf group upgrade --with-optional Multimedia
+```
+
+### DNF
+Edit `/etc/dnf/dnf.conf`
+```
+skip_if_unavailable=True
+fastestmirror=True
+max_parallel_downloads=10
+defaultyes=True
+```
 
 ## Gnome
 ```shell
@@ -227,75 +339,4 @@ gnome-extensions enable appindicatorsupport@rgcjonas.gmail.com
 gnome-extensions enable Vitals@CoreCoding.com
 gnome-extensions enable dash-to-dock@micxgx.gmail.com
 gnome-extensions enable drive-menu@gnome-shell-extensions.gcampax.github.com
-```
-
-## Locale
-```shell
-sudo echo "ru_RU.UTF-8 UTF-8" >> /etc/locale.gen
-sudo locale-gen
-```
-
-## Misc USB visibility
-`sudo usermod -aG dialout $USER`
-
-## Arch
-
-### Bluetooth
-```shell
-sudo systemctl enable bluetooth.service
-sudo systemctl start bluetooth.service
-```
-
-### Sound & Microphone
-[Advanced Linux Sound Architecture/Troubleshooting](https://wiki.archlinux.org/title/Advanced_Linux_Sound_Architecture)
-```shell
-sudo pacman -S sof-firmware
-```
-
-### Fonts
-```shell
-sudo pacman -S noto-fonts
-```
-
-### NVIDIA
-```shell
-sudo pacman -S nvidia
-```
-or for `geforce gtx 780m`
-```shell
-yay -S nvidia-470xx-dkms
-```
-
-### yay AUR Helper
-```shell
-sudo pacman -S --needed base-devel
-git clone https://aur.archlinux.org/yay-git.git
-cd yay-git
-makepkg -si
-```
-
-### Gnome
-```shell
-sudo pacman -S gnome-themes-extra
-yay -S gnome-browser-connector
-sudo pacman -R gnome-boxes cheese gnome-contacts gnome-maps gnome-photos gnome-music totem gnome-weather epiphany
-```
-
-## Fedora
-
-[rpm fusion](https://rpmfusion.org/)
-```shell
-sudo dnf install gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel
-
-sudo dnf install lame\* --exclude=lame-devel
-sudo dnf group upgrade --with-optional Multimedia
-```
-
-### DNF
-Edit `/etc/dnf/dnf.conf`
-```
-skip_if_unavailable=True
-fastestmirror=True
-max_parallel_downloads=10
-defaultyes=True
 ```
