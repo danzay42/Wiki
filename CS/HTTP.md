@@ -11,6 +11,8 @@ $headers
 $body
 ```
 
+# Status Codes
+
 Code | Meaning
 :-- | ---
 1xx | Information (не содержат данных)
@@ -18,3 +20,6 @@ Code | Meaning
 3xx | Redirect
 4xx | Client Error
 5xx | Server Error
+
+# MIME types
+Multipurpose Internet Mail Extensions - стандарт, описывающий передачу различных типов данных `multipart/mixed`

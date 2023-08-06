@@ -6,17 +6,23 @@ https://command-not-found.com/
 
 - uname | w
 - lsblk | lscpu | lspci | lsusb |...
-- whereis | which
+- whereis | which | type
 - cal | date
+- hash
+- strace | rtrace | autrace
+
+## Shell
+- sh -> bash -> zsh -> [fish](https://fishshell.com/)
+- jobs | bg | fg
 
 ## Files
 - cat | tac | split -> [bat](https://github.com/sharkdp/bat)
-- xxd
+- xxd | hexdump
 - head | tail | cut
 - grep -> [rg](https://github.com/BurntSushi/ripgrep) -> [batgrep](https://github.com/eth-p/bat-extras/blob/master/doc/batgrep.md)
 - diff | cmp -> [difft](https://github.com/Wilfred/difftastic) -> [batdiff](https://github.com/eth-p/bat-extras/blob/master/doc/batdiff.md)
 - wc
-- sed -> awk
+- tr -> sed -> awk
 - touch | cp | mv | rm | mkdir | rmdir
 - echo | printf
 - zip | gzip | bzip -> tar
@@ -30,19 +36,17 @@ https://command-not-found.com/
 	```
 - rsync
 
-## File System
+## File System (FS)
 - find -> [fd](https://github.com/sharkdp/fd)
 - ls -> [exa](https://github.com/ogham/exa) | [lsd](https://github.com/lsd-rs/lsd)
 - tree -> [broot](https://github.com/Canop/broot)
 - [mc](https://midnight-commander.org/wiki)
 - cd -> zoxide
-
 ### Disk
 - du -> [dust](https://github.com/bootandy/dust)
 - df -> [dysk](https://github.com/Canop/dysk)
 - fdisk -> cfdisk | gdisk -> parted -> gparted
-
-### Configs
+### FS Configs
 - tune2fs
 - blkid
 `/etc/fstab` - монтирование файловой системы
@@ -55,12 +59,52 @@ https://command-not-found.com/
 > `/usr/lib/udev/.` -> `/etc/udev/rules.d/.`
 > Загрузка при включении ядра: `/etc/modules-load.d/*.conf`
 > Условия для модуля: `/etc/modprob.d/*.conf`
+### Boot
+- GRUB
+> 	Update boot config
+> 	`/etc/default/grub` -> `grub-mkconfig` -> `/boot/grub`
+### Load system
+- systemctl `/etc/systemd/system/.` -> `/usr/lib/systemd/system/.`
+	- enable | disable
+	- start | stop
+	- reload | restart
+	- mask | unmask
+- openrc
 
-## Permissions
+Run level | Systemd | SysVinit
+--- | --- | ---
+0 | power-off | halt
+1 | rescue | single-user
+2 | multi-user | multi-user - NFS
+3 | multi-user | multi-user + NFS + Net
+4 | multi-user | custom
+5 | graphical | multi-user + NFS + Net + GUI
+6 | reboot | reboot
+
+## Security
 - su -> doas -> sudo
-- chmod | chown | chgrp | ...
-- chroot | chmod | chcpu | ... -> containers (docker)
 - **SELinux**
+### Access control
+chmod | chown | chgrp | ...
+### Isolation
+chroot | chmod | chcpu | ... -> containers (docker)
+### Firewall
+```mermaid
+flowchart LR
+
+subgraph kernel space
+A(netfilters)
+end
+
+subgraph "user space\n(фреймворки)"
+B(iptables)
+C(nftables)
+end
+
+A --> B & C
+B --> iptables & ufw
+C --> firewalld & nft
+```
 
 ## Processes
 - kill | killall
@@ -79,56 +123,46 @@ https://command-not-found.com/
 - wget -> curl -> [httpie](https://httpie.io/docs/cli/main-features)
 - ping | traceroute
 - nslookup
+- ss
+- ip
 - nc (netcat)
 - dig -> [dog](https://github.com/ogham/dog)
+	`/etc/resolve.conf` - local DNS
 - iwd | wpa_supplicant | nmcli -> nmtui
-- ssh | scp | sftp
-
-## Network File System
+- ssh | scp | sftp | ssh-keygen | ssh-copy-id | ...
+	`/etc/ssh/.` -> `~/.ssh/.`
+### Network File System
 - smb (sumba)
 - nfs (nfs-utils)
 
+## Sound
+### Driver & Interface
+OSS -> **ALSA**
+### Sound Server
+- PulseAudio
+- **PipeWire**
+- JACK
+- Network Audio System
+
 ## Super Search
-- fzf -> dmenu -> [rofi](https://github.com/davatorium/rofi)
+fzf -> dmenu -> [rofi](https://github.com/davatorium/rofi)
 
 ## Docs
 - man | less | help -> info -> [batman](https://github.com/eth-p/bat-extras/blob/master/doc/batman.md)
 - tldr
 - aprops (search manual pages)
 
+## Logging
+- rsyslog `/etc/rsyslog.conf`
+- systemd-journal
+- journalctl
+- logger
+
 ## Scheduler
 - at | atq | atrm
 - batch
 - cron | anacron
 - systemd.timer | systemd-run
-
-# Programming
----
-
-- [tokei](https://github.com/XAMPPRocky/tokei)
-
-## Benchmark
-- time -> [hyperfine](https://github.com/sharkdp/hyperfine)
-
-## [Git](https://git-scm.com/book/en/v2)
-- [lazygit](https://github.com/jesseduffield/lazygit)
-- [gitui](https://github.com/extrawurst/gitui)
-
-## Bash
-- xargs
-- seq
-- shuf
-- test
-- watch
-
-## Python
-- ipython
-- bpython
-
-## Rust
-- irust
-- [Evcxr](https://github.com/evcxr/evcxr)
-- cargo-info
 
 
 # Tiling window manager
@@ -143,25 +177,16 @@ https://command-not-found.com/
 - xcompmgr
 - picom
 
-## Monitor
-- xrandr
-
 ## Status Bar
 - **polybar**
 - xmobar
 
+## Monitor
+- xrandr
+
 ## Wallpapers
 - nitrogen
 - **feh**
-
-## Screenshots
-- **flameshot**
-- scrot
-
-## Sound
-- PulseAudio
-- ALSA
-- **PipeWire**
 
 ## Volume Control
 - amixer
@@ -180,21 +205,20 @@ https://command-not-found.com/
 # Soft
 ---
 
-- pass
-- qbittorrent | fragments
+- pass | bitwarden
+- qbittorrent | fragments (gnome)
 - [entr](https://github.com/clibs/entr) (event notify test runner)
 - [bat-extras](https://github.com/eth-p/bat-extras/tree/master)
 - atuin (best serch for command history)
 - eva (calculator)
+- [ffmpeg](https://ffmpeg.org/)
+- [pandoc](https://pandoc.org/)
+- scrot -> **flameshot**
 
 ## Terminal
-- sh -> bash -> zsh -> [fish](https://fishshell.com/)
 - [alacritty](https://github.com/alacritty/alacritty) | kitty
-- *Prompt*
-	- [starship](https://starship.rs/)
-- *Tabs multiplexer*
-	- tmux
-	- zellif
+- [starship](https://starship.rs/)
+- tmux | zellif
 - tput
 - history
 
@@ -225,6 +249,35 @@ https://command-not-found.com/
 	cd ../
 	rm -rf nerd-fonts
 	```
+
+
+# Programming
+---
+
+- [tokei](https://github.com/XAMPPRocky/tokei)
+
+## [Git](https://git-scm.com/book/en/v2)
+- [lazygit](https://github.com/jesseduffield/lazygit)
+- [gitui](https://github.com/extrawurst/gitui)
+
+## Bash
+- xargs
+- seq
+- shuf
+- test
+- watch
+
+## Python
+- ipython
+- bpython
+
+## Rust
+- irust
+- [Evcxr](https://github.com/evcxr/evcxr)
+- cargo-info
+
+## Benchmark
+- time -> [hyperfine](https://github.com/sharkdp/hyperfine)
 
 
 # Configs
@@ -260,6 +313,10 @@ yay -S nvidia-470xx-dkms
 
 # Video Acceleration (VA) API for Linux
 sudo pacman -S libva libva-utils
+
+# Gnome
+sudo pacman -S gnome-themes-extra gnome-firmware
+yay -S gnome-browser-connector
 ```
 
 [Advanced Linux Sound Architecture/Troubleshooting](https://wiki.archlinux.org/title/Advanced_Linux_Sound_Architecture)
@@ -279,22 +336,15 @@ cd yay-git
 makepkg -si
 ```
 
-### Gnome
-```shell
-sudo pacman -S gnome-themes-extra gnome-firmware
-yay -S gnome-browser-connector
-sudo pacman -R gnome-boxes cheese gnome-contacts gnome-maps gnome-photos gnome-music totem gnome-weather epiphany
-```
-
 ## Fedora
 
-[rpm fusion](https://rpmfusion.org/)
 ```shell
 sudo dnf install gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel
 
 sudo dnf install lame\* --exclude=lame-devel
 sudo dnf group upgrade --with-optional Multimedia
 ```
+[rpm fusion](https://rpmfusion.org/)
 
 ### DNF
 Edit `/etc/dnf/dnf.conf`
@@ -306,7 +356,12 @@ defaultyes=True
 ```
 
 ## Gnome
+
 ```shell
+# Remove unused
+sudo pacman -R gnome-boxes cheese gnome-contacts gnome-maps gnome-photos gnome-music totem gnome-weather epiphany
+
+# Settings
 gsettings set org.gnome.desktop.interface color-scheme prefer-dark
 gsettings set org.gnome.desktop.interface enable-hot-corners false
 
