@@ -4,5 +4,6 @@
   "attachmentFolderPath": "_static",
   "promptDelete": false,
   "newFileLocation": "current",
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "spellcheck": true
 }
