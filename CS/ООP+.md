@@ -1,4 +1,11 @@
-#oop
+---
+title: ООP+
+date: 2023-08-07
+time: 21:47
+aliases:
+tags:
+- OOP
+---
 
 
 # Абстракция

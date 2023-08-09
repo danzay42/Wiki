@@ -16,7 +16,7 @@ https://command-not-found.com/
 - jobs | bg | fg
 
 ## Files
-- cat | tac | split -> [bat](https://github.com/sharkdp/bat)
+- cat | tac | tee | split -> [bat](https://github.com/sharkdp/bat)
 - xxd | hexdump
 - head | tail | cut
 - grep -> [rg](https://github.com/BurntSushi/ripgrep) -> [batgrep](https://github.com/eth-p/bat-extras/blob/master/doc/batgrep.md)
@@ -181,7 +181,7 @@ fzf -> dmenu -> [rofi](https://github.com/davatorium/rofi)
 - **polybar**
 - xmobar
 
-## Monitor
+## Display
 - xrandr
 
 ## Wallpapers

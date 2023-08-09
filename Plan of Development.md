@@ -55,11 +55,6 @@
 # OAuth
 - Как работает под капотом по этапам
 - Умение пользоваться библиотеками для подключения к IS4
-## Authentication
-- session-based
-- token-based
-- jwt
-- oauth
 
 # Python
 - asyncio

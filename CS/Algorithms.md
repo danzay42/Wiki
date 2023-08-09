@@ -1,3 +1,11 @@
+---
+title: Algorithms
+date: 2023-08-07
+time: 21:46
+aliases:
+tags:
+---
+
 # Correctness
 [[Tests|Testing]]
 

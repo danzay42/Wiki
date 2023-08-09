@@ -15,7 +15,7 @@ $body
 
 Code | Meaning
 :-- | ---
-1xx | Information (не содержат данных)
+1xx | Info (не содержат данных)
 2xx | Success
 3xx | Redirect
 4xx | Client Error
