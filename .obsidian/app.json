@@ -1,9 +1,6 @@
 {
   "livePreview": false,
-  "spellcheckLanguages": [
-    "en-US",
-    "ru"
-  ],
+  "spellcheckLanguages": null,
   "attachmentFolderPath": "_static",
   "promptDelete": false,
   "newFileLocation": "current",
