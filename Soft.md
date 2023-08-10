@@ -173,34 +173,28 @@ fzf -> dmenu -> [rofi](https://github.com/davatorium/rofi)
 - awesome
 - leftwm (rust)
 
-
 ## Status Bar
 - **polybar**
 - xmobar
-
+## Volume Control
+- amixer
+## Keyboard Layout
+- setxkbmap
 ## Display
 - xrandr
-### Compositor
+## Compositor
 - xcompmgr
 - picom
-### Brightness
+## Brightness
 - xbacklight -> brillo
 - light
 - clight
-### Wallpapers
+## Wallpapers
 - nitrogen
 - **feh**
-
-## Volume Control
-- amixer
-
-## Keyboard Layout
-- setxkbmap
-
-
-
 ## Notify
 - dunst
+
 
 
 # Soft
