@@ -299,8 +299,11 @@ sudo usermod -aG dialout $USER
 ## Arch
 
 ```shell
+# base
+# pacstrap /mnt base linux linux-firmware sof-firmware base-devel grub efibootmgr
+
 # Bluetooth
-sudo pacman -S bluez-plugins bluez-util
+sudo pacman -S bluez bluez-util bluez-plugins
 sudo systemctl enable bluetooth.service
 sudo systemctl start bluetooth.service
 
