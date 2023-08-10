@@ -155,7 +155,7 @@ fzf -> dmenu -> [rofi](https://github.com/davatorium/rofi)
 ## Logging
 - rsyslog `/etc/rsyslog.conf`
 - systemd-journal
-- journalctl
+- **journalctl**
 - logger
 
 ## Scheduler
