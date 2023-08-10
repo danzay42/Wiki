@@ -183,6 +183,10 @@ fzf -> dmenu -> [rofi](https://github.com/davatorium/rofi)
 
 ## Display
 - xrandr
+### Brightness
+- xbacklight
+- light
+- clight
 
 ## Wallpapers
 - nitrogen
@@ -194,9 +198,7 @@ fzf -> dmenu -> [rofi](https://github.com/davatorium/rofi)
 ## Keyboard Layout
 - setxkbmap
 
-## Brightness
-- light
-- clight
+
 
 ## Notify
 - dunst
