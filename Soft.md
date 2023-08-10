@@ -178,6 +178,8 @@ fzf -> dmenu -> [rofi](https://github.com/davatorium/rofi)
 - xmobar
 ## Volume Control
 - amixer
+- alsamixer
+- pamixer
 ## Keyboard Layout
 - setxkbmap
 ## Display
@@ -195,6 +197,10 @@ fzf -> dmenu -> [rofi](https://github.com/davatorium/rofi)
 - **feh**
 ## Notify
 - dunst
+```sh
+notify-send
+dunstify
+```
 
 
 
