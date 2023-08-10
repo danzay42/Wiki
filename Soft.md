@@ -180,7 +180,8 @@ fzf -> dmenu -> [rofi](https://github.com/davatorium/rofi)
 - amixer
 - alsamixer
 - pamixer
-## Keyboard Layout
+## Keyboard
+- sxhkdrc
 - setxkbmap
 ## Display
 - xrandr
