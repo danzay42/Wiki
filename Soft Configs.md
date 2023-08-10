@@ -173,9 +173,6 @@ fzf -> dmenu -> [rofi](https://github.com/davatorium/rofi)
 - awesome
 - leftwm (rust)
 
-## Compositor
-- xcompmgr
-- picom
 
 ## Status Bar
 - **polybar**
@@ -183,12 +180,14 @@ fzf -> dmenu -> [rofi](https://github.com/davatorium/rofi)
 
 ## Display
 - xrandr
+### Compositor
+- xcompmgr
+- picom
 ### Brightness
-- xbacklight
+- xbacklight -> brillo
 - light
 - clight
-
-## Wallpapers
+### Wallpapers
 - nitrogen
 - **feh**
 
