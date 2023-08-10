@@ -184,6 +184,7 @@ fzf -> dmenu -> [rofi](https://github.com/davatorium/rofi)
 - xrandr
 ## Compositor
 - xcompmgr
+- compiz
 - picom
 ## Brightness
 - xbacklight -> brillo
