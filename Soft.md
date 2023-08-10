@@ -183,6 +183,8 @@ fzf -> dmenu -> [rofi](https://github.com/davatorium/rofi)
 ## Keyboard
 - sxhkdrc
 - setxkbmap
+## Screenshot
+- scrot -> **flameshot**
 ## Display
 - xrandr
 ## Compositor
@@ -216,7 +218,6 @@ dunstify
 - eva (calculator)
 - [ffmpeg](https://ffmpeg.org/)
 - [pandoc](https://pandoc.org/)
-- scrot -> **flameshot**
 
 ## Terminal
 - [alacritty](https://github.com/alacritty/alacritty) | kitty
