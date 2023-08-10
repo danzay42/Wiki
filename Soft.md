@@ -181,7 +181,7 @@ fzf -> dmenu -> [rofi](https://github.com/davatorium/rofi)
 - alsamixer
 - pamixer
 ## Keyboard
-- sxhkdrc
+- sxhkd
 - setxkbmap
 ## Screenshot
 - scrot -> **flameshot**
