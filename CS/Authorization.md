@@ -73,7 +73,7 @@ Token exchange | Для сторонних приложений в случае 
 
 ```mermaid
 sequenceDiagram
-
+empty
 ```
 
 # JSON Web Token (JWT)
@@ -83,7 +83,7 @@ sequenceDiagram
 - **signature**
 	создается на основе секретного ключа информационной системы
 ```
-JWT = base64(header) + "." + base64(payload) base64(signature)
+JWT = base64(header) + "." + base64(payload) + "." + base64(signature)
 ```
 
 # Connection
