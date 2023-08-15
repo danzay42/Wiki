@@ -35,7 +35,7 @@ end
 
 ## Учетные данные
 
-Grant type | 
+Grant type | Client type / Use case
 ---------- | -
 Authorization code |
 Implicit |
