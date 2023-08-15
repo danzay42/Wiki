@@ -3,13 +3,17 @@
 - ***Авторизация*** `((id + key) + permissions)?` - процедура предоставления прав пользователю
 
 ```mermaid
-flowchart TD
+flowchart LR
 subgraph Authorization
+flowchart LR
 subgraph Authentication
+flowchart LR
 subgraph Identification
-
+A(ID)
 end
+B(Key)
 end
+C(permissions)
 end
 ```
 
