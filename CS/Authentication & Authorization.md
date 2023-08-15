@@ -4,9 +4,16 @@
 
 ---
 
+Connection
 - session-based
 - token-based
 
+Standards 
 - OpenID
 - OAuth
 - JWT
+
+# JWT
+
+- Заголовок
+- 
