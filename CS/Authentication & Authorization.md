@@ -6,9 +6,7 @@
 
 # Standards
 - SAML
-- OpenID 1.0
-- OpenID 2.0
-- OpenID Connect (OIDC)
+- OpenID 1.0 -> OpenID 2.0 -> OpenID Connect (OIDC)
 
 ```mermaid
 flowchart LR
