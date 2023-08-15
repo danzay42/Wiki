@@ -37,20 +37,19 @@ end
 
 Grant type | Client type / Use case
 ---------- | -
-Authorization code | обычные приложения, которые могут хранить в секрете свой код авторизации
-Implicit | приложения, которые не могут хранить код авторизации
-Password | Для доверенных клиент-приложений
-Client credentials |
-Refresh token |
-SAML 2.0 bearer |
-JWT bearer |
+Authorization code | Для сторонних приложения, которые могут хранить свой код авторизации в секрете
+Implicit | Для всех приложений, которые не могут хранить код авторизации в секрете
+Password | Для доверенных приложений
+Client credentials | Для приложений работающих на осн
+Refresh token | 
+SAML 2.0 bearer | Для перехода с одного защищенного, на основе SAML, домена в другой, на основе OAuth
+JWT bearer | Для перехода с одного защищенного, на основе JWT, домена в другой, на основе OAuth 
 Device |
 Token exchange |
 
 Client credentials	For clients, such as web services, acting on their own behalf.
 Refresh token	A special grant to let clients refresh their access token without having to go through the steps of a code or password grant again.
-SAML 2.0 bearer	Lets a client in possession of a SAML 2.0 assertion (sign-in token) exchange it for an OAuth 2.0 access token.
-JWT bearer	Lets a client in possession of a JSON Web Token (JWT) assertion from one security domain exchange it for an OAuth 2.0 access token in another domain.
+
 Device	For devices without a browser or with constrained input, such as a smart TV, media console, printer, etc.
 Token exchange	Lets applications and services obtain an access token in delegation and impersonation scenarios.
 
