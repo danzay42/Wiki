@@ -4,31 +4,25 @@
 
 ---
 
-## Connection
-- session-based
-- token-based
+# Standards
+- SAML
+- OpenID 1.0
+- OpenID 2.0
+- OpenID Connect (OIDC)
 
-# Modern Flow
 ```mermaid
 flowchart LR
-
 subgraph OpenID Connect
 A(OAuth 2.0)
 B(JWT)
 end
 ```
 
-**Standards**
-- SAML
-- OpenID 1.0
-- OpenID 2.0
-- OpenID Connect (OIDC)
 
-**Protocols**
+# Protocols
 - OAuth 2.0
 
-**Tokens**
-- [[Authentication & Authorization#JWT|JWT]]
+# Tokens
 
 ## JWT
 - **header**
@@ -39,3 +33,7 @@ end
 ```
 JWT = base64(header) + "." + base64(payload) base64(signature)
 ```
+
+# Connection
+- session-based
+- token-based
