@@ -15,11 +15,11 @@ Standards
 
 # JWT
 
-- header
-- payload
+- **header**
+- **payload**
 	`json` - объект
-- signature
-	
+- **signature**
+	создается на основе секретного ключа информационной системы
 
 ```
 JWT = base64(header).base64(payload).base64(signature)
