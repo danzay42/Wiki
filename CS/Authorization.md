@@ -2,6 +2,17 @@
 - ***Аутентификация*** `(id + key)?` - процедура проверки подлинности пользователя
 - ***Авторизация*** `((id + key) + permissions)?` - процедура предоставления прав пользователю
 
+```mermaid
+flowchart TD
+subgraph Authorization
+subgraph Authentication
+subgraph Identification
+
+end
+end
+end
+```
+
 ---
 
 # Standards
@@ -52,6 +63,13 @@ Token exchange | Для сторонних приложений в случае 
 - Авторизация [[Authorization#^22176d|пользователя]]
 - Получение обратной ссылки на [[Authorization#^7eff33|клиент]] с временным клюем авторизации  
 - Авторизация [[Authorization#^7eff33|клиента]] на основе временного ключа
+
+```mermaid
+sequenceDiagram
+	Alice->>John: Hello John, how are you?
+    John-->>Alice: Great!
+    Alice-)John: See you later!
+```
 
 # JSON Web Token (JWT)
 - **header**
