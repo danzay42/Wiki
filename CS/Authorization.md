@@ -65,11 +65,11 @@ Device | Для устройств с ограниченным вводом да
 Token exchange | Для сторонних приложений в случае сценариев делегирования
 
 ## Flow
-- Регистрация [[Authorization#^7eff33|клиента]] у [[Authorization#^a90aba|сервера авторизации]] 
+- Регистрация [[Authorization#^7eff33|клиента]] у [[Authorization#^a90aba|сервера авторизации]] и получение **Client ID** и **Client Secret**
 - Авторизация [[Authorization#^22176d|пользователя]]
-- Редирект на [[Authorization#^7eff33|клиент]] с временным клюем авторизации  
-- Запрос [[Authorization#^7eff33|клиентом]] access-token на основе временного ключа авторизации
-- Получение и использование [[Authorization#^779c29|ресурсов]] на основе access-token
+- Редирект на [[Authorization#^7eff33|клиент]] с временным клюем авторизации (**code**)
+- Запрос [[Authorization#^7eff33|клиентом]] access token (JWT) на основе временного ключа авторизации **Code**, **Client ID** и **Client Secret**
+- Получение [[Authorization#^779c29|ресурсов]] на основе access token
 
 ```mermaid
 sequenceDiagram
