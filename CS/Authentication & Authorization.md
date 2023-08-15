@@ -9,8 +9,8 @@
 - token-based
 
 **Standards** 
-- OpenID (OIDC)
-- OAuth
+- SAML -> OpenID 1.0 -> OpenID 2.0 -> OpenID Connect (OIDC)
+- OAuth 2.0
 - JWT
 
 # JWT
