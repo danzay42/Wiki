@@ -4,17 +4,18 @@
 
 ```mermaid
 flowchart LR
-subgraph Authorization
-flowchart LR
-subgraph Authentication
-flowchart LR
-subgraph Identification
-A(ID)
-end
-B(Key)
-end
-C(permissions)
-end
+	subgraph Authorization
+		direction LR
+		subgraph Authentication
+			direction LR
+			subgraph Identification
+				a(ID)
+			end
+			b(Key)
+		end
+		c(Permissions)
+	end
+	a --- b --- c
 ```
 
 ---
@@ -25,10 +26,10 @@ end
 
 ```mermaid
 flowchart LR
-subgraph OpenID
-A(OAuth)
-B(JWT)
-end
+	subgraph OpenID
+		A(OAuth)
+		B(JWT)
+	end
 ```
 
 ## OpenID Flow
