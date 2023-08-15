@@ -18,6 +18,10 @@ B(JWT)
 end
 ```
 
+## OpenID Flow
+- Implicit flow
+- Authorization code flow
+- Hybrid flow
 
 # Protocols
 - OAuth 2.0
