@@ -23,14 +23,15 @@ end
 
 # OAuth 2.0 (Protocol)
 
-**Роли**
-- Resource owner
+## Роли
+- **Resource owner**
 	Конечный пользователь
-- Client
-- Resource server
-	Защищаемый ресурс
-- Authorization server
-
+- **Client**
+	Стороннее приложение запрашивающее доступ к защищенному ресурсу
+- **Resource server**
+	Защищаемый на основе токена ресурс
+	Проверка токена - минимальная
+- **Authorization server**
 
 
 # JSON Web Token (JWT)
