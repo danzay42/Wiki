@@ -16,11 +16,6 @@ B(JWT)
 end
 ```
 
-## OpenID Flow
-- Implicit flow
-- Authorization code flow
-- Hybrid flow
-
 # OAuth 2.0 (Protocol)
 
 ## Роли
@@ -48,10 +43,10 @@ Device | Для устройств с ограниченным вводом да
 Token exchange | Для сторонних приложений в случае сценариев делегирования
 
 ## Flow
-- Регистрация [[Authentication & Authorization#^7eff33|клиента]] у [[Authentication & Authorization#^a90aba|сервера авторизации]] 
-- Аутентификация [[Authentication & Authorization#^22176d|пользователя]]
-- Получение обратной ссылки
-- Аутентификация [[Authentication & Authorization#^7eff33|клиента]]
+- Регистрация [[Authorization#^7eff33|клиента]] у [[Authorization#^a90aba|сервера авторизации]] 
+- Авторизация [[Authorization#^22176d|пользователя]]
+- Получение обратной ссылки на 
+- Аутентификация [[Authorization#^7eff33|клиента]]
 - Авторизация клиента
 
 # JSON Web Token (JWT)
