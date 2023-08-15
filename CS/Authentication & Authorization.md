@@ -15,5 +15,12 @@ Standards
 
 # JWT
 
-- Заголовок
-- 
+- header
+- payload
+	`json` - объект
+- signature
+	
+
+```
+JWT = base64(header).base64(payload).base64(signature)
+```
