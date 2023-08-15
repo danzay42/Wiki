@@ -21,12 +21,14 @@ end
 - Authorization code flow
 - Hybrid flow
 
-# Protocols
-- OAuth 2.0
+# OAuth 2.0 (Protocol)
 
-# Tokens
 
-## JWT
+
+Роли
+- В
+
+# JSON Web Token (JWT)
 - **header**
 - **payload**
 	`json` - объект
