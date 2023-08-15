@@ -19,6 +19,9 @@ flowchart LR
 ```
 
 ---
+# Connection
+- session-based
+- token-based
 
 # Standards
 - SAML 2.0
@@ -86,6 +89,7 @@ empty
 JWT = base64(header) + "." + base64(payload) + "." + base64(signature)
 ```
 
-# Connection
-- session-based
-- token-based
+# WebAuthn
+
+Расширение 
+
