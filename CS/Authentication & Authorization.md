@@ -4,15 +4,6 @@
 
 ---
 
-**Connection**
-- session-based
-- token-based
-
-**Standards** 
-- SAML -> OpenID 1.0 -> OpenID 2.0 -> OpenID Connect (OIDC)
-- OAuth 2.0
-- JWT
-
 ```mermaid
 flowchart LR
 
@@ -21,6 +12,23 @@ A(OAuth 2.0)
 B(JWT)
 end
 ```
+
+**Standard**
+SAML -> OpenID 1.0 -> OpenID 2.0 -> OpenID Connect (OIDC)
+
+
+
+**Protocol**
+- OAuth 2.0
+
+**Token**
+- JWT
+
+
+# Connection
+- session-based
+- token-based
+
 
 # JWT
 
@@ -31,5 +39,5 @@ end
 	создается на основе секретного ключа информационной системы
 
 ```
-JWT = base64(header).base64(payload).base64(signature)
+JWT = base64(header) + "." + base64(payload) base64(signature)
 ```
