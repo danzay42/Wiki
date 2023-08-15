@@ -22,6 +22,7 @@ flowchart LR
 
 # Standards
 - SAML 2.0
+- OAuth 2.0
 - OpenID 1.0 -> OpenID 2.0 -> OpenID Connect (OIDC)
 
 ```mermaid
@@ -37,7 +38,7 @@ flowchart LR
 - Authorization code flow
 - Hybrid flow
 
-# OAuth 2.0 (Protocol)
+# OAuth
 
 ## Роли
 - **Resource owner**
