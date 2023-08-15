@@ -13,6 +13,15 @@
 - OAuth 2.0
 - JWT
 
+```mermaid
+flowchart LR
+
+subgraph OpenID Connect
+A(OAuth 2.0)
+B(JWT)
+end
+```
+
 # JWT
 
 - **header**
