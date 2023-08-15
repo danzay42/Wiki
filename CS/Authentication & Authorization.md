@@ -4,12 +4,12 @@
 
 ---
 
-Connection
+**Connection**
 - session-based
 - token-based
 
-Standards 
-- OpenID
+**Standards** 
+- OpenID (OIDC)
 - OAuth
 - JWT
 
