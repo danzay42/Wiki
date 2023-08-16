@@ -110,9 +110,17 @@ sequenceDiagram
 
 	
 	o ->>+ c: use app
-	c ->>+ a: redirect to auth server
-	a -->>+ o: authorization
-	o ->>- a: login/password 
+	c -->>+ a: redirect to auth server
+	
+	a -->> o: authorization
+	o ->>+ a: login/password
+
+	activate a
+	a ->> a: check owner
+	deactivate a
+
+	
+	
 ```
 
 # JSON Web Token (JWT)
