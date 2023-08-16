@@ -105,15 +105,14 @@ sequenceDiagram
 
 	par Authorization
 		o ->>+ c: authorization
-		c -->> a: redirect to auth server
-		
-		a -->> o: s
-		o ->>+ a: login/password
-		a ->> a: check owner
-		a ->>- c: Redirect URL + Code
-		c ->>+ a: Code + ClienID + Secret
-		a ->>- c: Access + Refresh Token
-
+			c -->>+ a: redirect to auth server
+				a -->>+ o: authentication
+				o ->>- a: login/password
+				
+				a ->>+- a: check owner
+				a ->>- c: Redirect URL + Code
+				c ->>+ a: Code + ClienID + Secret
+			a ->>- c: Access + Refresh Token
 		c -->>- o: success
 	end
 
