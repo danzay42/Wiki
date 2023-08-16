@@ -98,24 +98,22 @@ sequenceDiagram
 	participant a as Authorization server
 	participant r as Resource server
 
-	par Client Registration
+	opt Client Registration
 		c ->>+ a: Redirect URL + Client Data
 		a ->>- c: ClienID + Secret
 	end
 
-	par Authorization
-		o ->>+ c: authorization
-			c -->>+ a: redirect to auth server
-				a -->>+ o: authentication
-				o ->>- a: login/password
-				a ->> a: check owner
-				a ->>- c: Redirect URL + Code
-				c ->>+ a: Code + ClienID + Secret
-			a ->>- c: Access + Refresh Token
-		c -->>- o: success
-	end
+	o ->>+ c: Authorization
+		c -->>+ a: Redirect to Authorization server
+			a -->>+ o: Authentication
+			o ->>- a: login/password
+			a ->> a: check Resource owner
+			a ->>- c: Redirect URL + Code
+			c ->>+ a: Code + ClienID + Secret
+		a ->>- c: Access + Refresh Token
+	c -->>- o: 
 
-	par
+	opt
 		c ->>+ r: Access Token
 		r ->> r: check token
 		r ->>- c: User Data
