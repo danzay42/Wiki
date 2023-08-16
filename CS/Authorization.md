@@ -108,19 +108,27 @@ sequenceDiagram
 		a ->>- c: ClienID + Secret
 	end
 
+	par Authorization
+		o ->>+ c: app auth
+		c -->>+ a: redirect to auth server
+		
+		a -->> o: authorization
+		o ->>+ a: login/password
 	
-	o ->>+ c: use app
-	c -->>+ a: redirect to auth server
+		activate a
+		a ->> a: check owner
+		deactivate a
 	
-	a -->> o: authorization
-	o ->>+ a: login/password
+		a ->>- c: Code
+		c ->> a: Code + ClienID + Secret
+		a ->> c: Access Token (refresh token)
+	end
 
-	activate a
-	a ->> a: check owner
-	deactivate a
-
-	
-	
+	par Use Case
+	c ->>+ r: Access Token
+	r ->> r: check token
+	r ->>- c: User Data
+	end
 ```
 
 # JSON Web Token (JWT)
