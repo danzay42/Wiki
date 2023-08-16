@@ -68,6 +68,27 @@ Device | Для устройств с ограниченным вводом да
 Token exchange | Для сторонних приложений в случае сценариев делегирования
 
 ## Flow
+
+```
+		 +--------+                               +---------------+
+		 |        |--(A)- Authorization Request ->|   Resource    |
+		 |        |                               |     Owner     |
+		 |        |<-(B)-- Authorization Grant ---|               |
+		 |        |                               +---------------+
+		 |        |
+		 |        |                               +---------------+
+		 |        |--(C)-- Authorization Grant -->| Authorization |
+		 | Client |                               |     Server    |
+		 |        |<-(D)----- Access Token -------|               |
+		 |        |                               +---------------+
+		 |        |
+		 |        |                               +---------------+
+		 |        |--(E)----- Access Token ------>|    Resource   |
+		 |        |                               |     Server    |
+		 |        |<-(F)--- Protected Resource ---|               |
+		 +--------+                               +---------------+
+```
+
 - Регистрация [[Authorization#^7eff33|клиента]] у [[Authorization#^a90aba|сервера авторизации]] и получение **Client ID** и **Client Secret**
 - Авторизация [[Authorization#^22176d|пользователя]]
 - Редирект на [[Authorization#^7eff33|клиент]] с временным клюем авторизации (**code**)
