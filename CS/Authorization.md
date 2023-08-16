@@ -25,7 +25,7 @@ flowchart LR
 
 # Standards
 - SAML 2.0
-- OAuth 2.0
+- OAuth 2.0 -> OAuth 2.1
 - OpenID 1.0 -> OpenID 2.0 -> OpenID Connect (OIDC)
 
 ```mermaid
