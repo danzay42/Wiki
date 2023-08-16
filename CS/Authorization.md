@@ -89,11 +89,6 @@ Token exchange | Для сторонних приложений в случае 
 		 +--------+                               +---------------+
 ```
 
-- Регистрация [[Authorization#^7eff33|клиента]] у [[Authorization#^a90aba|сервера авторизации]] и получение **Client ID** и **Client Secret**
-- Авторизация [[Authorization#^22176d|пользователя]]
-- Редирект на [[Authorization#^7eff33|клиент]] с временным клюем авторизации (**code**)
-- Запрос [[Authorization#^7eff33|клиентом]] access token (JWT) на основе временного ключа авторизации **Code**, **Client ID** и **Client Secret**
-- Получение [[Authorization#^779c29|ресурсов]] на основе access token
 
 ```mermaid
 sequenceDiagram
@@ -109,19 +104,17 @@ sequenceDiagram
 	end
 
 	par Authorization
-		o ->>+ c: app auth
-		c -->>+ a: redirect to auth server
+		o ->>+ c: authorization
+		c -->> a: redirect to auth server
 		
-		a -->> o: authorization
+		a -->> o: s
 		o ->>+ a: login/password
-	
-
 		a ->> a: check owner
-
-	
 		a ->>- c: Redirect URL + Code
 		c ->>+ a: Code + ClienID + Secret
 		a ->>- c: Access + Refresh Token
+
+		c -->>- o: success
 	end
 
 	par
