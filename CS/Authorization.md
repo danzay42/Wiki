@@ -19,10 +19,22 @@ flowchart LR
 ```
 
 ---
+
 # Connection
 - session-based
 - token-based
 
+# JSON Web Token (JWT)
+- **header**
+- **payload**
+	`json` - объект
+- **signature**
+	создается на основе секретного ключа информационной системы
+```
+JWT = base64(header) + "." + base64(payload) + "." + base64(signature)
+```
+
+---
 # Standards
 - SAML 2.0
 - OAuth 2.0 -> OAuth 2.1
@@ -36,14 +48,11 @@ flowchart LR
 	end
 ```
 
-## OpenID Flow
-- Implicit flow
-- Authorization code flow
-- Hybrid flow
 
-# OAuth
 
-## Роли
+## OAuth
+
+### Роли
 - **Resource owner**
 	*Конечный пользователь*, выдающий согласие *стороннему приложению* ^22176d
 - **Client**
@@ -53,7 +62,7 @@ flowchart LR
 - **Authorization server**
 	*Выделенный сервер* для выдачи токенов после *аутентификации* и *авторизации* ^a90aba
 
-## Учетные данные
+### Учетные данные
 
 Grant type | Client type / Use case
 ---------- | -
@@ -67,7 +76,7 @@ JWT bearer | Для перехода с одного защищенного, н�
 Device code | Для устройств с ограниченным вводом данных
 Token exchange | Для сторонних приложений в случае сценариев делегирования
 
-## Flow
+### Flow
 
 ```
 		 +--------+                               +---------------+
@@ -89,14 +98,13 @@ Token exchange | Для сторонних приложений в случае 
 		 +--------+                               +---------------+
 ```
 
-
 ```mermaid
 sequenceDiagram
 	autonumber
-	actor o as Resource owner
+	actor o as Resource Owner
 	participant c as Client
-	participant a as Authorization server
-	participant r as Resource server
+	participant a as Authorization Server
+	participant r as Resource Server
 
 	opt Client Registration
 		c ->>+ a: Redirect URL + Client Data
@@ -104,10 +112,10 @@ sequenceDiagram
 	end
 
 	o ->>+ c: Authorization
-		c -->>+ a: Redirect to Authorization server
+		c -->>+ a: Redirect to Authorization Server
 			a -->>+ o: Authentication
-			o ->>- a: login/password
-			a ->> a: check Resource owner
+			o ->>- a: Credential
+			a ->> a: Check Resource Owner
 			a ->>- c: Redirect URL + Code
 			c ->>+ a: Code + ClienID + Secret
 		a ->>- c: Access + Refresh Token
@@ -115,29 +123,19 @@ sequenceDiagram
 
 	opt
 		c ->>+ r: Access Token
-		r ->> r: check token
+		r ->> r: Check Token
 		r ->>- c: User Data
 	end
 ```
 
-# JSON Web Token (JWT)
-- **header**
-- **payload**
-	`json` - объект
-- **signature**
-	создается на основе секретного ключа информационной системы
-```
-JWT = base64(header) + "." + base64(payload) + "." + base64(signature)
-```
 
-
-# WebAuthn
+## WebAuthn
 
 Расширение OAuth, для авторизации с помощью внешних ключей безопасности.
 
-## Роли
+### Роли
 ![[Authorization#Роли]]
-- **Authenticator**
+- **Authentication**
 	Внешний ключ безопасности
 	- генерирует пару открытых / закрытых ключей
 	- безопасно хранит закрытый ключ
