@@ -97,6 +97,7 @@ Token exchange | Для сторонних приложений в случае 
 
 ```mermaid
 sequenceDiagram
+	autonumber
 	actor o as Resource owner
 	participant c as Client
 	participant a as Authorization server
