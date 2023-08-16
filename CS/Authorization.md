@@ -97,7 +97,7 @@ Token exchange | Для сторонних приложений в случае 
 
 ```mermaid
 sequenceDiagram
-empty
+#TODO
 ```
 
 # JSON Web Token (JWT)
