@@ -97,7 +97,13 @@ Token exchange | Для сторонних приложений в случае 
 
 ```mermaid
 sequenceDiagram
-#TODO
+	actor o as Resource owner
+	participant c as Client
+	participant a as Authorization server
+	participant r as Resource server
+
+	o ->>+ c: use app
+	c ->>- o: login
 ```
 
 # JSON Web Token (JWT)
