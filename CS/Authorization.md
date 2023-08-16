@@ -115,19 +115,19 @@ sequenceDiagram
 		a -->> o: authorization
 		o ->>+ a: login/password
 	
-		activate a
+
 		a ->> a: check owner
-		deactivate a
+
 	
-		a ->>- c: Code
-		c ->> a: Code + ClienID + Secret
-		a ->> c: Access Token (refresh token)
+		a ->>- c: Redirect URL + Code
+		c ->>+ a: Code + ClienID + Secret
+		a ->>- c: Access + Refresh Token
 	end
 
-	par Use Case
-	c ->>+ r: Access Token
-	r ->> r: check token
-	r ->>- c: User Data
+	par
+		c ->>+ r: Access Token
+		r ->> r: check token
+		r ->>- c: User Data
 	end
 ```
 
