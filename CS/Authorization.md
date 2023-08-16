@@ -92,7 +92,7 @@ Token exchange | Для сторонних приложений в случае 
 
 ```mermaid
 sequenceDiagram
-	%%autonumber%%
+	autonumber
 	actor o as Resource owner
 	participant c as Client
 	participant a as Authorization server
@@ -108,8 +108,7 @@ sequenceDiagram
 			c -->>+ a: redirect to auth server
 				a -->>+ o: authentication
 				o ->>- a: login/password
-				
-				a ->>+- a: check owner
+				a ->> a: check owner
 				a ->>- c: Redirect URL + Code
 				c ->>+ a: Code + ClienID + Secret
 			a ->>- c: Access + Refresh Token
