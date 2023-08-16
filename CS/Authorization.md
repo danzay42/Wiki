@@ -102,8 +102,13 @@ sequenceDiagram
 	participant a as Authorization server
 	participant r as Resource server
 
+	par Client Registration
+		c ->>+ a: Redirect URL + Client Data
+		a ->>- c: ClienID + Secret
+	end
+
 	o ->>+ c: use app
-	c ->>- o: login
+	c -->>- o: app login form 
 ```
 
 # JSON Web Token (JWT)
