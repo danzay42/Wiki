@@ -97,7 +97,7 @@ Token exchange | Для сторонних приложений в случае 
 
 ```mermaid
 sequenceDiagram
-	autonumber
+	%%autonumber%%
 	actor o as Resource owner
 	participant c as Client
 	participant a as Authorization server
@@ -108,8 +108,11 @@ sequenceDiagram
 		a ->>- c: ClienID + Secret
 	end
 
+	
 	o ->>+ c: use app
-	c -->>- o: app login form 
+	c ->>+ a: redirect to auth server
+	a -->>+ o: authorization
+	o ->>- a: login/password 
 ```
 
 # JSON Web Token (JWT)
