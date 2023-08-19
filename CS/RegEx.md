@@ -1,5 +1,3 @@
-glob -> blob
-
 # Regular Expressions
 ---
 
@@ -7,7 +5,7 @@ glob -> blob
 
 ```/(паттерн)/(модификаторы)```
 
-**Паттерн** состоит из [[Search#Символы|символов]] и [[Search#Квантификаторы|квантификаторов]] к ним
+**Паттерн** состоит из [[RegEx#Символы|символов]] и [[RegEx#Квантификаторы|квантификаторов]] к ним
 
 **Модификатор** | Описание
 --- | ---
@@ -29,8 +27,8 @@ u | match with full Unicode
 `[...]` | соответствует любому из символов в скобках
 `[^...]` | соответствует любому из символов не содержащемуся в скобках
 \| | или (либо левая группа символов либо правая)
-`{...}` | [[Search#Квантификаторы]]
-`(...)` | [[Search#Группы]]
+`{...}` | [[RegEx#Квантификаторы]]
+`(...)` | [[RegEx#Группы]]
 
 ## Квантификаторы
 
@@ -83,6 +81,7 @@ u | match with full Unicode
 
 # Globbing 
 ---
+Специфичные выряжена для используемые для работы с файлами в  
 
 wildcard | regex | Описание
 :-: | :-: | ---
@@ -90,5 +89,4 @@ wildcard | regex | Описание
 `?` | `.` | match any single character
 `[abc]` | `[abc]` | match one character from the set
 `[a-z]` | `[a-z]` | match one set character from the range
-`[^abc]` | `[^abc]` | match one set character from the range
 `!` | | match one character that is not in the set  
