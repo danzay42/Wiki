@@ -1,4 +1,3 @@
-
 # REST Architecture
 [Architectural Styles and the Design of Network-based Software Architectures](https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm)
 
