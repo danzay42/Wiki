@@ -89,4 +89,5 @@ wildcard | regex | Описание
 `?` | `.` | match any single character
 `[abc]` | `[abc]` | match one character from the set
 `[a-z]` | `[a-z]` | match one set character from the range
-`!` | | match one character that is not in the set  
+`![a]` | `[^a]` | match one character that is not in the set  
+`^` | `^` | match start of line
