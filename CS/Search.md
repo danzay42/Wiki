@@ -65,7 +65,7 @@ $ | Конец строки
 \\D | `[^0-9]`
 \\s | `[ \t\r\n\v\f]` | любой из возможных символов пробела
 \\S | `[^ \t\r\n\v\f]` | не пробельный символ
-\\b | `(?<=\W)(?=\w)|(?<=\w)(?=\W)` | Word boundaries
+\\b | ```(?<=\W)(?=\w)|(?<=\w)(?=\W)``` | Word boundaries
 \\b | `(?<=\W)(?=\W)|(?<=\w)(?=\w)` | Non-word boundaries
 \\a | `[A-Za-z]` | может не работать
 
@@ -86,9 +86,9 @@ $ | Конец строки
 
 wildcard | regex | Описание
 :-: | :-: | ---
-`*` | `.*` | Match any number of any character 
-`?` | `.` | Любой одиночный символ
-`[abc]` | `[abc]` | Любой символ из указанных
-`[a-z]` | `[a-z]` | Любой символ из указанных в диапазоне
+`*` | `.*` | match any number of any character including none
+`?` | `.` | match any single character
+`[abc]` | `[abc]` | match one character from the set
+`[a-z]` | `[a-z]` | match one set character from the range
 `[^abc]` | `[^abc]` | Любой символ из указанных в диапазоне
 `!` | | match one character that is not in the set  
