@@ -63,8 +63,8 @@ u | match with full Unicode
 `\D` | `[^0-9]`
 `\s` | `[ \t\r\n\v\f]` | любой из возможных символов пробела
 `\S` | `[^ \t\r\n\v\f]` | не пробельный символ
-`\b` | ```(?<=\W)(?=\w)|(?<=\w)(?=\W)``` | Word boundaries
-`\b` | `(?<=\W)(?=\W)|(?<=\w)(?=\w)` | Non-word boundaries
+`\b` | `(?<=\W)(?=\w)\|(?<=\w)(?=\W)` | Word boundaries
+`\b` | `(?<=\W)(?=\W)\|(?<=\w)(?=\w)` | Non-word boundaries
 `\a` | `[A-Za-z]` | может не работать
 
 ## Группы
