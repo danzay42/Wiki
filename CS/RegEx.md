@@ -57,15 +57,15 @@ u | match with full Unicode
 
 \-  | ASCII | Описание
 :-: | --- | ---
-\\w | `[A-Za-z0-9_]`
-\\W | `[^A-Za-z0-9_]`
-\\d | `[0-9]`
-\\D | `[^0-9]`
-\\s | `[ \t\r\n\v\f]` | любой из возможных символов пробела
-\\S | `[^ \t\r\n\v\f]` | не пробельный символ
-\\b | ```(?<=\W)(?=\w)|(?<=\w)(?=\W)``` | Word boundaries
-\\b | `(?<=\W)(?=\W)|(?<=\w)(?=\w)` | Non-word boundaries
-\\a | `[A-Za-z]` | может не работать
+`\w` | `[A-Za-z0-9_]`
+`\W` | `[^A-Za-z0-9_]`
+`\d` | `[0-9]`
+`\D` | `[^0-9]`
+`\s` | `[ \t\r\n\v\f]` | любой из возможных символов пробела
+`\S` | `[^ \t\r\n\v\f]` | не пробельный символ
+`\b` | ```(?<=\W)(?=\w)|(?<=\w)(?=\W)``` | Word boundaries
+`\b` | `(?<=\W)(?=\W)|(?<=\w)(?=\w)` | Non-word boundaries
+`\a` | `[A-Za-z]` | может не работать
 
 ## Группы
 
@@ -89,5 +89,5 @@ wildcard | regex | Описание
 `?` | `.` | match any single character
 `[abc]` | `[abc]` | match one character from the set
 `[a-z]` | `[a-z]` | match one set character from the range
-`![a]` | `[^a]` | match one character that is not in the set  
-`^` | `^` | match start of line
+ | | 
+`[!a]` | `[^a]` | match one character that is not in the set
