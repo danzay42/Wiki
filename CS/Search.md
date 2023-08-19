@@ -22,10 +22,10 @@ u | match with full Unicode
 
 \-  | Описание
 :-: | ---
-^ | Начало строки
-$ | Конец строки
-. | Любой символ
-\\ | экранирующий символ
+`^` | Начало строки
+`$` | Конец строки
+`.` | Любой символ
+`\` | экранирующий символ
 `[...]` | соответствует любому из символов в скобках
 `[^...]` | соответствует любому из символов не содержащемуся в скобках
 \| | или (либо левая группа символов либо правая)
@@ -90,5 +90,5 @@ wildcard | regex | Описание
 `?` | `.` | match any single character
 `[abc]` | `[abc]` | match one character from the set
 `[a-z]` | `[a-z]` | match one set character from the range
-`[^abc]` | `[^abc]` | Любой символ из указанных в диапазоне
+`[^abc]` | `[^abc]` | match one set character from the range
 `!` | | match one character that is not in the set  
