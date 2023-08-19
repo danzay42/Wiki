@@ -81,7 +81,8 @@ u | match with full Unicode
 
 # Globbing 
 ---
-Специфичные выряжена для используемые для работы с файлами в командных оболочках. Специфичны для каждой оболочки. 
+Специфичные выряжена для используемые для работы с файлами в командных оболочках. Специфичны для каждой оболочки.
+Командная оболочка может иметь расширенный набор глобов (extglob).
 
 wildcard | regex | Описание
 :-: | :-: | ---
@@ -89,5 +90,4 @@ wildcard | regex | Описание
 `?` | `.` | match any single character
 `[abc]` | `[abc]` | match one character from the set
 `[a-z]` | `[a-z]` | match one set character from the range
- | | 
-`[!a]` | `[^a]` | match one character that is not in the set
+`[^a-z]`<br>`[!a-z]` | `[^a-z]` | match one character that is not in the set
