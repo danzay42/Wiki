@@ -17,8 +17,9 @@ https://command-not-found.com/
 
 ## Files
 - cat | tac | tee | split -> [bat](https://github.com/sharkdp/bat)
-- xxd | hexdump
+- more | less
 - head | tail | cut
+- xxd | hexdump
 - grep -> [rg](https://github.com/BurntSushi/ripgrep) -> [batgrep](https://github.com/eth-p/bat-extras/blob/master/doc/batgrep.md)
 - diff | cmp -> [difft](https://github.com/Wilfred/difftastic) -> [batdiff](https://github.com/eth-p/bat-extras/blob/master/doc/batdiff.md)
 - wc
@@ -148,7 +149,7 @@ OSS -> **ALSA**
 fzf -> dmenu -> [rofi](https://github.com/davatorium/rofi)
 
 ## Docs
-- man | less | help -> info -> [batman](https://github.com/eth-p/bat-extras/blob/master/doc/batman.md)
+- man | help -> info -> [batman](https://github.com/eth-p/bat-extras/blob/master/doc/batman.md)
 - [tldr](https://tldr.sh/)
 - aprops (search manual pages)
 
