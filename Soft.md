@@ -20,7 +20,7 @@ https://command-not-found.com/
 - more | less
 - head | tail | cut
 - xxd | hexdump
-- grep -> [rg](https://github.com/BurntSushi/ripgrep) -> [batgrep](https://github.com/eth-p/bat-extras/blob/master/doc/batgrep.md)
+- ed -> grep -> [rg](https://github.com/BurntSushi/ripgrep) -> [batgrep](https://github.com/eth-p/bat-extras/blob/master/doc/batgrep.md)
 - diff | cmp -> [difft](https://github.com/Wilfred/difftastic) -> [batdiff](https://github.com/eth-p/bat-extras/blob/master/doc/batdiff.md)
 - wc
 - tr -> sed -> awk
