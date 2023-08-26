@@ -6,9 +6,8 @@ https://command-not-found.com/
 
 - uname | w
 - lsblk | lscpu | lspci | lsusb |...
-- whereis | which | type
+- whereis | which | type | command | hash
 - cal | date
-- hash
 - strace | rtrace | autrace
 
 ## Shell
