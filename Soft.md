@@ -114,6 +114,7 @@ C --> firewalld & nft
 - top -> htop -> [btm](https://github.com/ClementTsang/bottom)
 - nvtop
 - [mprocs](https://github.com/pvolok/mprocs)
+- free
 
 ## Power
 - powertop
