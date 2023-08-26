@@ -152,7 +152,7 @@ fzf -> dmenu -> [rofi](https://github.com/davatorium/rofi)
 ## Docs
 - man | help -> info -> [batman](https://github.com/eth-p/bat-extras/blob/master/doc/batman.md)
 - [tldr](https://tldr.sh/)
-- aprops (search manual pages)
+- apropos (search manual pages) | `man -k` | `man --apropos`
 
 ## Logging
 - rsyslog `/etc/rsyslog.conf`
