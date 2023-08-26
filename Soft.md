@@ -23,6 +23,7 @@ https://command-not-found.com/
 - ed -> grep -> [rg](https://github.com/BurntSushi/ripgrep) -> [batgrep](https://github.com/eth-p/bat-extras/blob/master/doc/batgrep.md)
 - diff | cmp -> [difft](https://github.com/Wilfred/difftastic) -> [batdiff](https://github.com/eth-p/bat-extras/blob/master/doc/batdiff.md)
 - wc
+- uniq
 - tr -> sed -> awk
 - touch | cp | mv | rm | mkdir | rmdir
 - echo | printf
