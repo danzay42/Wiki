@@ -18,11 +18,11 @@ https://command-not-found.com/
 - cat | tac | tee | split -> [bat](https://github.com/sharkdp/bat)
 - more | less
 - head | tail | cut
+- shuf | sort | uniq
 - xxd | hexdump
 - ed -> grep -> [rg](https://github.com/BurntSushi/ripgrep) -> [batgrep](https://github.com/eth-p/bat-extras/blob/master/doc/batgrep.md)
 - diff | cmp -> [difft](https://github.com/Wilfred/difftastic) -> [batdiff](https://github.com/eth-p/bat-extras/blob/master/doc/batdiff.md)
 - wc
-- uniq
 - tr -> sed -> awk
 - touch | cp | mv | rm | mkdir | rmdir
 - echo | printf
@@ -269,7 +269,6 @@ dunstify
 ## Bash
 - xargs
 - seq
-- shuf
 - test
 - watch
 
