@@ -5,7 +5,8 @@ https://command-not-found.com/
 ---
 
 - uname | w
-- lsblk | lscpu | lspci | lsusb |...
+- lsblk | lscpu | lspci | lsusb | ...
+- fuser
 - whereis | which | type | command | hash
 - cal | date
 - strace | rtrace | autrace
