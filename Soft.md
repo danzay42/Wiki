@@ -271,7 +271,7 @@ dunstify
 ## Bash
 - xargs
 - seq
-- test
+- test | `[` | `[[`
 - watch
 
 ## Python
