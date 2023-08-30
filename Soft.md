@@ -243,6 +243,7 @@ dunstify
 ### Configs
 - [kickstart](https://github.com/nvim-lua/kickstart.nvim)
 - [NvChad](https://nvchad.com/)
+- [LazyVim](https://www.lazyvim.org/)
 - [AstroNvim](https://astronvim.github.io/)
 - [LunarVim](https://www.lunarvim.org/)
 
