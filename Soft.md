@@ -7,7 +7,7 @@ https://command-not-found.com/
 - uname | w
 - lsblk | lscpu | lspci | lsusb | ...
 - fuser
-- whereis | which | type | command | hash
+- type | which  | command | hash
 - cal | date
 - strace | rtrace | autrace
 
@@ -267,12 +267,6 @@ dunstify
 ## [Git](https://git-scm.com/book/en/v2)
 - [lazygit](https://github.com/jesseduffield/lazygit)
 - [gitui](https://github.com/extrawurst/gitui)
-
-## Bash
-- xargs
-- seq
-- test | `[` | `[[`
-- watch
 
 ## Python
 - ipython
