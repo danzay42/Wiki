@@ -10,6 +10,11 @@ https://command-not-found.com/
 - type | which  | command | hash
 - cal | date
 - strace | rtrace | autrace
+- xargs
+- seq
+- test | `[` | `[[`
+- watch
+- time -> [hyperfine](https://github.com/sharkdp/hyperfine)
 
 ## Shell
 - sh -> bash -> zsh -> [fish](https://fishshell.com/)
@@ -22,7 +27,7 @@ https://command-not-found.com/
 - shuf | sort | uniq
 - xxd | hexdump
 - ed -> grep -> [rg](https://github.com/BurntSushi/ripgrep) -> [batgrep](https://github.com/eth-p/bat-extras/blob/master/doc/batgrep.md)
-- diff | cmp -> [difft](https://github.com/Wilfred/difftastic) -> [batdiff](https://github.com/eth-p/bat-extras/blob/master/doc/batdiff.md)
+- diff | cmp | patch -> [difft](https://github.com/Wilfred/difftastic) -> [batdiff](https://github.com/eth-p/bat-extras/blob/master/doc/batdiff.md)
 - wc
 - tr -> sed -> awk
 - touch | cp | mv | rm | mkdir | rmdir
@@ -276,10 +281,6 @@ dunstify
 - irust
 - [Evcxr](https://github.com/evcxr/evcxr)
 - cargo-info
-
-## Benchmark
-- time -> [hyperfine](https://github.com/sharkdp/hyperfine)
-
 
 # Configs
 ---
