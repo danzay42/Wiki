@@ -7,4 +7,7 @@ date: 2023-09-02
 
 # Architecture Patterns
  - Layered
- - event
+ - Event-driven
+ - Monolithic
+ - Micro-kernel
+ - Microservises
