@@ -1,9 +1,8 @@
 ---
 title: Regular Expressions
-date: 2023-08-19
-time: 11:41
-aliases: RegEx
 tags:
+aliases: RegEx
+date: 2023-08-19
 ---
 
 

@@ -1,9 +1,8 @@
 ---
 title: Algorithms
-date: 2023-08-07
-time: 21:46
-aliases:
 tags:
+aliases:
+date: 2023-08-07
 ---
 
 # Correctness

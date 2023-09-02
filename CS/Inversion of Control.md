@@ -1,10 +1,9 @@
 ---
 title: Dependency Injection
-date: 2023-08-07
-time: 21:46
-aliases:
 tags:
 - DI
+aliases:
+date: 2023-08-07
 ---
 
 # Dependency Inversion
