@@ -1,11 +1,11 @@
 ---
 authors:
 title: {{title}}
-aliases:
 year:
 edition:
+aliases:
 tags:
 date: {{date}}
-read: false
+readed: false
 ---
 
