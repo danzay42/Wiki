@@ -6,8 +6,8 @@ date: 2023-09-02
 ---
 
 # Architecture Patterns
- - Layered
+ - Layered (Onion)
  - Event-driven
  - Monolithic
- - Micro-kernel
- - Microservises
+ - Micro-kernel (Plugin)
+ - Microservices
