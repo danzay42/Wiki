@@ -30,7 +30,7 @@ https://command-not-found.com/
 - diff | cmp | patch -> [difft](https://github.com/Wilfred/difftastic) -> [batdiff](https://github.com/eth-p/bat-extras/blob/master/doc/batdiff.md)
 - wc
 - tr -> sed -> awk
-- touch | cp | mv | rm | mkdir | rmdir
+- touch | cp -> fcp | mv | rm | mkdir | rmdir
 - echo | printf
 - zip | gzip | bzip -> tar
 - ln
@@ -48,7 +48,7 @@ https://command-not-found.com/
 - ls -> [exa](https://github.com/ogham/exa) | [lsd](https://github.com/lsd-rs/lsd)
 - tree -> [broot](https://github.com/Canop/broot)
 - [mc](https://midnight-commander.org/wiki)
-- cd -> zoxide
+- cd -> [zoxide](https://github.com/ajeetdsouza/zoxide)
 ### Disk
 - du -> [dust](https://github.com/bootandy/dust)
 - df -> [dysk](https://github.com/Canop/dysk)
