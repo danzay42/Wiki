@@ -3,8 +3,9 @@ authors:
 title: {{title}}
 year:
 tags:
-edition:
 aliases:
+
+edition:
 date: {{date}}
 readed: false
 ---
