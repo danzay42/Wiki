@@ -2,9 +2,9 @@
 authors:
 title: {{title}}
 year:
+tags:
 edition:
 aliases:
-tags:
 date: {{date}}
 readed: false
 ---
