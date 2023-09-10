@@ -239,6 +239,7 @@ dunstify
 - vi -> vim -> [nvim](https://neovim.io/)
 
 ### Plugins & utils:
+Lazy (all plugins)-> Mason
 - LSP
 - tree-sitter (быстрый и правильный способо подстветки кода)
 - Tagbar (навигация внутри файла)
