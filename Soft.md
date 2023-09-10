@@ -276,6 +276,7 @@ dunstify
 ## Python
 - ipython
 - bpython
+- ruff
 
 ## Rust
 - irust
