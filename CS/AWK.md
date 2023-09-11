@@ -7,6 +7,7 @@ date: 2023-09-11
 
 `pattern { action }`
 
+# Flow
 ```mermaid
 stateDiagram-v2
 
@@ -22,6 +23,7 @@ action --> next
 next --> line
 ```
 
+# Types 
 Pattern | Summary
 --- | ---
 `BEGIN { statements }` | The `statements` are executed once before any input has been read
@@ -29,8 +31,9 @@ Pattern | Summary
 `expression { statements }` | The `statements` are executed at each input line where the expression is true, that i, nonzero or nonnull
 `/regex/ { statements }` |  The `statements` are executed at each input line that contains a string matched by the [[Regular Expressions]], implies `$0 ~ /regex/`
 `compound pattern { statements }` | A `compound pattern` combines expressions with `&& (AND)`, `|| (OR)`, `! (NOT)` and `()`
-`pattern1, pattern2 { statements }` | A `range pattern` matches each input line from a line matched by first pattern to the
+`pattern1, pattern2 { statements }` | A `range pattern` matches each input line from a line matched by first pattern to the next line matched by second pattern, inclusive; the `statements` are executed at each matching line
 
+# Operators
 Operator | Meaning
 --- | ---
 `<` | less than
@@ -41,3 +44,5 @@ Operator | Meaning
 `!=` | not equal to
 `~` | matched by 
 `!~` | not matched by
+
+# Actions
