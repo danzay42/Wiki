@@ -1,8 +1,10 @@
 ---
 title: Regular Expressions
-tags:
- - regex
-aliases: RegEx
+tags: []
+aliases: 
+- RegEx
+- RegExp
+- RegExpr
 date: 2023-08-19
 ---
 
