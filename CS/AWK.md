@@ -23,7 +23,7 @@ action --> next
 next --> line
 ```
 
-# Types 
+# Patterns (Types) 
 Pattern | Summary
 --- | ---
 `BEGIN { statements }` | The `statements` are executed once before any input has been read
@@ -47,7 +47,18 @@ Operator | Meaning
 
 # Actions
 The statements in actions can include:
--  `expressions`, with constants, variables, assignments, function calls, etc
-- `print expression-list`
-- `printf(format, expression-list)`
-- if (expression) statement
+-  `_expressions_`, with constants, variables, assignments, function calls, etc
+- `{ _statements_ }`
+- `print _expression-list_`
+- `printf(format, _expression-list_)`
+- `if (_expression_) _statement_`
+- `if (_expression_) _statement_ else _statement_`
+- `while (_expression_) _statement_`
+- `do _statement_ while (_expression_)`
+- `for (_expression_; _expression_; _expression_) _statement_`
+- `for (_variable_ in _array_) _statement_`
+- `break`
+- `continue`
+- `next`
+- `exit`
+- `exit _expression_`
