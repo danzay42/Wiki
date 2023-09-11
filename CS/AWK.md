@@ -3,13 +3,15 @@
 ```mermaid
 stateDiagram
 
-
-pattern: Pattern \n matches?
+readline: Line
+state pattern: Pattern \n matches? <<choise>>
 action: Execute Action
 next: Go next line
 
-[*] --> Line
-
-Line --> a
+readline --> pattern
+pattern --> action: yes
+pattern --> next: no
+action --> next
+next --> readline
 
 ```
