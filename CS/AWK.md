@@ -41,7 +41,7 @@ Pattern | Summary
 `pattern1, pattern2 { statements }` | A `range pattern` matches each input line from a line matched by first pattern to the next line matched by second pattern, inclusive; the `statements` are executed at each matching line
 
 # Operators
- | 
+Type | Operators 
 --- | ---
 Assignment | `=` `+=` `-=` `*=` `/=` `%=` `^=`
 conditional expression | `?:`
@@ -50,6 +50,7 @@ matching | `~` `!~`
 relational | `<` `<=` `==` `!=` `>=` `>`
 arithmetic | `+` `-` `*` `/` `%` `^`
 increment | `++i` `--i` `i++` `i--`
+grouping | `()`
 
 
 # Actions
@@ -87,3 +88,14 @@ Variable | Meaning | Default
 `RS` | controls the input record separator | `\n`
 `RSTART` | start of sting matched by match function
 `SUBSEP` | subscript separator | `\034`
+
+# Built-in Math Functions
+- $atan2(y,x)$
+- $cos(x)$
+- $exp(x)$ equal $e^x$ 
+- $int(x)$
+- $log(x)$ equal $log_e(x)$
+- $rand()$
+- $sin(x)$
+- $sqrt(x)$
+- $srand(x)$
