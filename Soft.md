@@ -23,13 +23,12 @@ https://command-not-found.com/
 ## Files
 - cat | tac | tee | split -> [bat](https://github.com/sharkdp/bat)
 - more | less
-- head | tail | cut
 - shuf | sort | uniq
 - xxd | hexdump
 - ed -> grep -> [rg](https://github.com/BurntSushi/ripgrep) -> [batgrep](https://github.com/eth-p/bat-extras/blob/master/doc/batgrep.md)
 - diff | cmp | patch -> [difft](https://github.com/Wilfred/difftastic) -> [batdiff](https://github.com/eth-p/bat-extras/blob/master/doc/batdiff.md)
 - wc
-- tr -> sed -> awk
+- head | tail -- tr -> cut -> sed -> grep -> awk
 - touch | cp -> fcp | mv | rm | mkdir | rmdir
 - echo | printf
 - zip | gzip | bzip -> tar
