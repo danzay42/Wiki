@@ -58,7 +58,6 @@ The statements in actions can include:
 -  `_expressions_`, with constants, variables, assignments, function calls, etc
 - `{ _statements_ }`
 - `print _expression-list_`
-- `printf(format, _expression-list_)`
 - `if (_expression_) _statement_`
 - `if (_expression_) _statement_ else _statement_`
 - `while (_expression_) _statement_`
@@ -71,7 +70,8 @@ The statements in actions can include:
 - `exit`
 - `exit _expression_`
 
-# Built-in Variables
+# Built-in 
+## Variables
 Variable | Meaning | Default
 :-- | --- | :-:
 `ARGC` | number of command-line arguments
@@ -89,13 +89,23 @@ Variable | Meaning | Default
 `RSTART` | start of sting matched by match function
 `SUBSEP` | subscript separator | `\034`
 
-# Built-in Math Functions
-- $atan2(y,x)$
-- $cos(x)$
-- $exp(x)$ equal $e^x$ 
-- $int(x)$
-- $log(x)$ equal $log_e(x)$
-- $rand()$
-- $sin(x)$
-- $sqrt(x)$
-- $srand(x)$
+## Math Functions
+- `atan2(y,x)`
+- `cos(x)`
+- `exp(x)` equal $e^x$ 
+- `int(x)`
+- `log(x)` equal $log_e(x)$
+- `rand()`
+- `sin(x)`
+- `sqrt(x)`
+- `srand(x)` set new seed `x` for `rand()`
+
+## String Function
+- `gsub(r, s)`
+- `gsub(r, s, t)`
+- `index(s, t)`
+- `length(s)`
+- `match(s, r)`
+- `split(s, a)`
+- `split(s, a, fs)`
+- `sprintf()`
