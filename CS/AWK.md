@@ -43,10 +43,13 @@ Pattern | Summary
 # Operators
  | 
 --- | ---
-Assignment | `=`, `+=`, `-=`, `*=, /=, %=, ^=`
-conditional expression | `?`
-logical | `||, &&, !`
-matching | `~, !~`
+Assignment | `=` `+=` `-=` `*=` `/=` `%=` `^=`
+conditional expression | `?:`
+logical | \|\| `&&` `!`
+matching | `~` `!~`
+relational | `<` `<=` `==` `!=` `>=` `>`
+arithmetic | `+` `-` `*` `/` `%` `^`
+increment | `++i` `--i` `i++` `i--`
 
 
 # Actions
