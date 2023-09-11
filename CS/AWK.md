@@ -10,7 +10,7 @@ date: 2023-09-11
 ```shell
 awk 'pattern {action}' input_file
 cat input_file | awk 'pattern {action}'
-
+awk -f awk_script input_file
 ```
 
 
@@ -37,20 +37,17 @@ Pattern | Summary
 `END { statements }` | The `statements` are executed once after all input has been read
 `expression { statements }` | The `statements` are executed at each input line where the expression is true, that i, nonzero or nonnull
 `/regex/ { statements }` |  The `statements` are executed at each input line that contains a string matched by the [[Regular Expressions]], implies `$0 ~ /regex/`
-`compound pattern { statements }` | A `compound pattern` combines expressions with `&& (AND)`, `|| (OR)`, `! (NOT)` and `()`
+`compound pattern { statements }` | A `compound pattern` combines expressions with `&&`, `||`, `!` and `()` for grouping
 `pattern1, pattern2 { statements }` | A `range pattern` matches each input line from a line matched by first pattern to the next line matched by second pattern, inclusive; the `statements` are executed at each matching line
 
 # Operators
-Operator | Meaning
+ | 
 --- | ---
-`<` | less than
-`<=` | less than or equal to
-`>` | greater than
-`>=` | greater than or equal **to**
-`==` | equal to
-`!=` | not equal to
-`~` | matched by 
-`!~` | not matched by
+Assignment | `=`, `+=`, `-=`, `*=, /=, %=, ^=`
+conditional expression | `?`
+logical | `||, &&, !`
+matching | `~, !~`
+
 
 # Actions
 The statements in actions can include:
