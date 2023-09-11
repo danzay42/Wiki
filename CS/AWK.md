@@ -7,6 +7,13 @@ date: 2023-09-11
 
 `pattern { action }`
 
+```shell
+awk 'pattern {action}' input_file
+cat input_file | awk 'pattern {action}'
+
+```
+
+
 # Flow
 ```mermaid
 stateDiagram-v2
@@ -66,13 +73,17 @@ The statements in actions can include:
 # Built-in Variables
 Variable | Meaning | Default
 :-- | --- | :-:
-ARGC |
-ARGV | 
-FILENAME |
-FNR | record number in current file
-FS | controls the input field separator | " "
-NF | number of fields in current record
-NR | number of records read so far
-OFMT | output format for numbers | `%.6g`
-OFS | output field separator | ` `
-ORS | output record separator | `\n`
+`ARGC` | number of command-line arguments
+`ARGV` | array of command-line arguments
+`FILENAME` | name of current input file
+`FNR` | record number in current file
+`FS` | controls the input field separator | ` `
+`NF` | number of fields in current record
+`NR` | number of records read so far
+`OFMT` | output format for numbers | `%.6g`
+`OFS` | output field separator | ` `
+`ORS` | output record separator | `\n`
+`RLENGTH` | length of string matched by match function
+`RS` | controls the input record separator | `\n`
+`RSTART` | start of sting matched by match function
+`SUBSEP` | subscript separator | `\034`
