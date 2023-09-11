@@ -62,3 +62,17 @@ The statements in actions can include:
 - `next`
 - `exit`
 - `exit _expression_`
+
+# Built-in Variables
+Variable | Meaning | Default
+:-- | --- | :-:
+ARGC |
+ARGV | 
+FILENAME |
+FNR | record number in current file
+FS | controls the input field separator | " "
+NF | number of fields in current record
+NR | number of records read so far
+OFMT | output format for numbers | `%.6g`
+OFS | output field separator | ` `
+ORS | output record separator | `\n`
