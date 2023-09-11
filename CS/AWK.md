@@ -41,16 +41,18 @@ Pattern | Summary
 `pattern1, pattern2 { statements }` | A `range pattern` matches each input line from a line matched by first pattern to the next line matched by second pattern, inclusive; the `statements` are executed at each matching line
 
 # Operators
-Type | Operators 
---- | ---
+Type | Operators | Example
+--- | --- | ---
 Assignment | `=` `+=` `-=` `*=` `/=` `%=` `^=`
 conditional expression | `?:`
-logical | \|\| `&&` `!`
+logical | \|\| `&&` `!` `in`
 matching | `~` `!~`
 relational | `<` `<=` `==` `!=` `>=` `>`
 arithmetic | `+` `-` `*` `/` `%` `^`
 increment | `++i` `--i` `i++` `i--`
-grouping | `()`
+grouping | `( )`
+concatenation | ` ` | `"a" "bc"` equal `"abc"`
+field | `$`
 
 
 # Actions
@@ -108,4 +110,9 @@ Variable | Meaning | Default
 - `match(s, r)`
 - `split(s, a)`
 - `split(s, a, fs)`
-- `sprintf()`
+- `printf(fmt, expr-list)`
+- `sprintf(fmt, expr-list)`
+- `sub(r, s)`
+- `sub(r, s, t)`
+- `substr(s, p)`
+- `substr(s, p, n)`
