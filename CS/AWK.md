@@ -1,10 +1,17 @@
+---
+title: AWK
+tags: [bash, shell]
+aliases: []
+date: 2023-09-11
+---
+
 `pattern { action }`
 
 ```mermaid
-stateDiagram
+stateDiagram-v2
 
-readline: Line
-state pattern: Pattern \n matches? <<choise>>
+line: "Line of "
+state "Pattern \n matches?" as pattern
 action: Execute Action
 next: Go next line
 
