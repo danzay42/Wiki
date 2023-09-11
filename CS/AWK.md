@@ -29,7 +29,7 @@ Pattern | Summary
 `expression { statements }` | The `statements` are executed at each input line where the expression is true, that i, nonzero or nonnull
 `/regex/ { statements }` |  The `statements` are executed at each input line that contains a string matched by the [[Regular Expressions]], implies `$0 ~ /regex/`
 `compound pattern { statements }` | A `compound pattern` combines expressions with `&& (AND)`, `|| (OR)`, `! (NOT)` and `()`
-`pattern1 , pattern2 { statements }` | A `range pattern` matches each input line from a line matched by any specified pattern
+`pattern1, pattern2 { statements }` | A `range pattern` matches each input line from a line matched by first pattern to the
 
 Operator | Meaning
 --- | ---
