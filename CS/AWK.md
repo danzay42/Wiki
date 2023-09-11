@@ -22,7 +22,7 @@ action --> next
 next --> line
 ```
 
-pattern | summary
+Pattern | Summary
 --- | ---
 `BEGIN { statements }` | The `statements` are executed once before any input has been read
 `END { statements }` | The `statements` are executed once after all input has been read
@@ -30,3 +30,16 @@ pattern | summary
 `/regex/ { statements }` |  The `statements` are executed at each input line that contains a string matched by the [[Regular Expressions]]
 `compound pattern { statements }` | A `compound pattern` combines expressions with `&& (AND)`, `|| (OR)`, `! (NOT)` and `()`
 `pattern1 , pattern2 { statements }` | A `range pattern` matches each input line from a line matched by any specified pattern
+
+Operator | Meaning
+--- | ---
+`<` | less than
+`<=` | less than or equal to
+`>` | greater than
+`>=` | greater than or equal **to**
+`==` | equal to
+`!=` | not equal to
+`~` | matched by 
+`!~` | not matched by
+
+`/regex/` implies `$0 ~ /regexpr/`

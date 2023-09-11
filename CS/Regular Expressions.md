@@ -1,6 +1,7 @@
 ---
 title: Regular Expressions
 tags:
+ - regex
 aliases: RegEx
 date: 2023-08-19
 ---
