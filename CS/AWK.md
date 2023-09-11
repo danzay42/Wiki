@@ -24,6 +24,8 @@ next --> line
 
 pattern | summary
 --- | ---
-`BEGIN { statement }` | The `statement` are executed once before any input has been read
-`END { statement }` | The `statement` are executed once after all input has been read
-`expression {}`
+`BEGIN { statements }` | The `statements` are executed once before any input has been read
+`END { statements }` | The `statements` are executed once after all input has been read
+`expression { statements }` | The `statements` are executed at each input line where the expression is true, that i, nonzero or nonnull
+`/regex/ { statements }` |  The `statements` are executed at each input line that contains a string matched by the [[Regular Expressions]]
+`compound pattern `
