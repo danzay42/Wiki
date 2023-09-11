@@ -44,7 +44,7 @@ Pattern | Summary
 Type | Operators | Example
 --- | --- | ---
 Assignment | `=` `+=` `-=` `*=` `/=` `%=` `^=`
-conditional expression | `?:`
+conditional expression | `?:` | `x?y:z` mean: if `x` than `y` else `z`
 logical | \|\| `&&` `!` `in`
 matching | `~` `!~`
 relational | `<` `<=` `==` `!=` `>=` `>`
@@ -64,13 +64,13 @@ The statements in actions can include:
 - `if (_expression_) _statement_ else _statement_`
 - `while (_expression_) _statement_`
 - `do _statement_ while (_expression_)`
-- `for (_expression_; _expression_; _expression_) _statement_`
+- `for (_expression1_; _expression2_; _expression3_) _statement_` equal `_expression1_ ; while (_expression2_) { _statement_ ; _expression3_}`
 - `for (_variable_ in _array_) _statement_`
 - `break`
 - `continue`
 - `next`
 - `exit`
-- `exit _expression_`
+- `exit _status_`
 
 # Built-in 
 ## Variables
