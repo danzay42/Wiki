@@ -5,8 +5,8 @@ aliases: []
 date: 2023-09-11
 ---
 
-`pattern { action }`
 
+# Usage
 ```shell
 awk 'pattern {action}' input_file
 cat input_file | awk 'pattern {action}'
@@ -15,6 +15,7 @@ awk -f awk_script input_file
 
 
 # Flow
+`pattern { action }`
 ```mermaid
 stateDiagram-v2
 
@@ -71,6 +72,13 @@ The statements in actions can include:
 - `next`
 - `exit`
 - `exit _status_`
+
+# Function
+```
+function _name_ (_argumetns_) {
+	return _arguments_
+}
+```
 
 # Built-in 
 ## Variables
