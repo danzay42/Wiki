@@ -46,3 +46,8 @@ Operator | Meaning
 `!~` | not matched by
 
 # Actions
+The statements in actions can include:
+-  `expressions`, with constants, variables, assignments, function calls, etc
+- `print expression-list`
+- `printf(format, expression-list)`
+- if (expression) statement
