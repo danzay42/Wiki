@@ -34,9 +34,9 @@ p2 -- write --> q1 & q2 -- read --> c2
 
 Брокер | Scale[^1] | Data Persistent[^2] | Клиентские возможности 
 --- | --- | --- | ---
-Kafka | > 1e6 | yes | one-to-many
-RabbitMQ | ~ 50e3 | yes/no | one-to-one/one-to-many
-Redis | < 1e6 | partial | one-to-one/one-to-many
+[[Message Broker#Kafka\|Kafka]] | > 1e6 | yes | one-to-many
+[[Message Broker#RabbitMQ\|RabbitMQ]] | ~ 50e3 | yes/no | one-to-one/one-to-many
+[[Message Broker#Redis\|Redis]] | < 1e6 | partial | one-to-one/one-to-many
 
 ## Kafka
 - Подписчики должны сами забирать сообщение
@@ -48,8 +48,13 @@ Redis | < 1e6 | partial | one-to-one/one-to-many
 - Гибкая маршрутизация
 - Удаляет сообщение после доставки
 - Сложности при горизонтальном масштабировании
+- Гарантирует доставку
 
 ## Redis
 - В большинстве случаев используется как NoSQL СУБД
 - Резервное копирование на определенный момент времени
-- Имеет ограниченый функуион
+- Имеет ограниченный функционал по сравнению с другими брокерами
+
+- Обработка больших объемов данных
+- Не требуется персистентность
+- Необходима
