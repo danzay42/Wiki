@@ -150,9 +150,7 @@ a("Program \n (Client)") --> b("Pulseaudio \n (server)") --> c("ALSA \n (driver)
 ### Driver & Interface
 Open Sound System #OSS -> **ALSA**
 ### Sound Server
-- PulseAudio
-- **PipeWire**
-- JACK
+- PulseAudio -> JACK -> PipeWire
 - Network Audio System
 
 ## Super Search
