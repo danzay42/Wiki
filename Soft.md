@@ -143,8 +143,12 @@ C --> firewalld & nft
 - nfs (nfs-utils)
 
 ## Sound
+```mermaid
+flowchart LR
+a("Program \n (Client)") --> b("Pulseaudio \n (server)") --> c("ALSA \n (driver)") --> d(Sound Card)
+```
 ### Driver & Interface
-OSS -> **ALSA**
+Open Sound System #OSS -> **ALSA**
 ### Sound Server
 - PulseAudio
 - **PipeWire**
