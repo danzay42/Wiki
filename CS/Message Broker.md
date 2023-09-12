@@ -6,31 +6,25 @@
 Логическая единица, объединяющая сообщения по некоторому принципу
 
 ```mermaid
-flowchart TB
+flowchart LR
 
 subgraph Producer
 	direction TB
-	p1
-	p2
+	p1 & p2
 end
 
 subgraph MessageBroker
 	direction TB
-	q1(Queue)
-	q2(Queue)
+	q1(Queue) & q2(Queue)
 end
 
 subgraph Consumer
 	direction TB
-	c2
-	c1
+	c2 & c1
 end
 
-Producer --> <essageBrocker
-
-p1 --> q1
-p2 --> q1 & q2
-c1 --> q1
-c2 --> q1 & q2
-
+p1 -- write --> q1 -- read --> c1
+p2 -- write --> q1 & q2 -- read --> c2
 ```
+
+# Условия
