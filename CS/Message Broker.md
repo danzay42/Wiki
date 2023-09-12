@@ -8,12 +8,24 @@
 ```mermaid
 flowchart LR
 
-p(Producer) --> MessageBroker 
+subgraph Producer
+	direction TB
+	p1(Queue)
+	p2(Produce)
+end
+
 subgraph MessageBroker
 	direction TB
 	q1(Queue)
 	q2(Queue)
 end
-c(Consumer) --> q1
+
+subgraph Consumer
+	direction TB
+	q1(Queue)
+	q2(Queue)
+end
+
+q1 & q2 --- c(Consumer)
 
 ```
