@@ -27,4 +27,9 @@ p1 -- write --> q1 -- read --> c1
 p2 -- write --> q1 & q2 -- read --> c2
 ```
 
-# Условия
+# Сравнение
+Брокер| Scale | Data Persistent | Клиентские возможности 
+--- | --- | --- | --- | ---
+Kafka | $> 1e6/s$
+RebbitMQ | 
+Redis |
