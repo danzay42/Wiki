@@ -28,8 +28,12 @@ p2 -- write --> q1 & q2 -- read --> c2
 ```
 
 # Сравнение
-Брокер| Scale | Data Persistent | Клиентские возможности 
+- *Масштабируемость* - количество сообщений в секунду обрабатываемых системой ^82e565
+- *Data Persistent* - Способность постоянно хранить данные и возможность их восстановить
+- 
+
+Брокер | [[Message Broker#^82e565\|Scale]] | Data Persistent | Клиентские возможности 
 --- | --- | --- | --- | ---
-Kafka | $> 1e6/s$
-RebbitMQ | 
-Redis |
+Kafka | > 1e6 per sec | yes | one-to-many
+RebbitMQ | ~ 50e3 per sec 
+Redis | 
