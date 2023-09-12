@@ -7,7 +7,7 @@ date: 2023-09-02
 
 # Architecture Patterns
  - Layered (Onion)
- - Event-driven
+ - Event-driven ^725ee5
  - Monolithic
  - Micro-kernel (Plugin)
  - Microservices
