@@ -21,5 +21,5 @@ Code | Meaning
 4xx | Client Error
 5xx | Server Error
 
-# MIME types
+# MIME types #MIME
 Multipurpose Internet Mail Extensions - стандарт, описывающий передачу различных типов данных `multipart/mixed`
