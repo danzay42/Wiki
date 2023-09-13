@@ -1,16 +1,15 @@
-On-site -> IaaS -> PaaS -> SaaS
 
-layer | SaaS | PaaS
---- | ---
-Application |
-Data |
-Runtime |
-Middle ware |
-OS |
-Virtualization |
-Servers |
-Storage |
-Network |
+\- | SaaS | PaaS | IasS | On-site
+--- | :-: | :-: | :-: | :-:
+Application | + | - | - | - 
+Data | + | - | - | - 
+Runtime | + | + | - | - 
+Middle ware | + | + | - | - 
+OS | + | + | - | - 
+Virtualization | + | + | + | - 
+Servers | + | + | + | - 
+Storage | + | + | + | - 
+Network | + | + | + | - 
  
 
 # Infrastructure as Code #IaC
