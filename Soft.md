@@ -277,9 +277,10 @@ Lazy (all plugins)-> Mason (nice lsp plugins)
 
 ## Python
 - **interactive**: python | bpython | ipython
-- **test runners**: unittest | pytest -> tox
-- **linters**: pylint | flake8 | ruff
 - **formatters**: isort | black
+- **linters**: pylint | flake8 | ruff
+- **typing**: mypy
+- **test runners**: unittest | pytest -> tox
 - **documentation**: Sphinx
 - **build & publish**: build + twine
 
