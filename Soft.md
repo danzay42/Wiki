@@ -41,6 +41,7 @@ https://command-not-found.com/
 	ln orginal_file hardlink_file
 	```
 - rsync
+- zathura (pdf-reader)
 
 ## File System (FS)
 - find -> [fd](https://github.com/sharkdp/fd)
