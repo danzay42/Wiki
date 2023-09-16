@@ -350,7 +350,6 @@ sudo pacman -S flatpak
 
 # add source
 flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-
 ```
 
 [Advanced Linux Sound Architecture/Troubleshooting](https://wiki.archlinux.org/title/Advanced_Linux_Sound_Architecture)
