@@ -332,6 +332,27 @@ sudo pacman -S gnome-themes-extra gnome-firmware
 yay -S gnome-browser-connector
 ```
 
+### Pacman
+```shell
+# list unused packages
+sudo pacman -Qtdq
+# remove unused
+sudo pacman -Rns $(sudo pacman -Qtdq)
+# clear cache
+sudo pacman -Rc
+sudo pacman -Rcc
+```
+
+### Flatpak
+```shell
+# install
+sudo pacman -S flatpak
+
+# add source
+flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+```
+
 [Advanced Linux Sound Architecture/Troubleshooting](https://wiki.archlinux.org/title/Advanced_Linux_Sound_Architecture)
 
 ### Система межпроцессного взаимодействия
