@@ -276,9 +276,12 @@ Lazy (all plugins)-> Mason (nice lsp plugins)
 - [gitui](https://github.com/extrawurst/gitui)
 
 ## Python
-- ipython
-- bpython
-- ruff
+- **interactive**: python | bpython | ipython
+- **test runners**: unittest | pytest -> tox
+- **linters**: pylint | flake8 | ruff
+- **formatters**: isort | black
+- **documentation**: Sphinx
+- **build & publish**: build + twine
 
 ## Rust
 - irust
