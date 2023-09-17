@@ -339,8 +339,8 @@ sudo pacman -Qtdq
 # remove unused
 sudo pacman -Rns $(sudo pacman -Qtdq)
 # clear cache
-sudo pacman -Rc
-sudo pacman -Rcc
+sudo pacman -Sc
+sudo pacman -Scc
 ```
 
 ### Flatpak
