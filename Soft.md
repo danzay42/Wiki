@@ -158,7 +158,7 @@ Open Sound System #OSS -> **ALSA**
 fzf -> dmenu -> [rofi](https://github.com/davatorium/rofi)
 
 ## Docs
-- man | info | help  -> [batman](https://github.com/eth-p/bat-extras/blob/master/doc/batman.md)
+- man | info | help (shell specific)  -> [batman](https://github.com/eth-p/bat-extras/blob/master/doc/batman.md)
 - [tldr](https://tldr.sh/)
 - apropos (search manual pages) | `man -k` | `man --apropos`
 
