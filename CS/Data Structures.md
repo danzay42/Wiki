@@ -21,6 +21,7 @@
 			- Ternary search tree
 	- Suffix tree
 	- R-tree
+	- ...
 - Heap (Reversed tree)
 - Graph
 - Hash Table
