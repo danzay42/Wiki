@@ -6,6 +6,7 @@
 	- Unrolled linked list
 	- Circular linked list
 	- Multiply linked list
+	- ...
 - Stack (LIFO)
 - Queue (FIFO)
 - Tree
