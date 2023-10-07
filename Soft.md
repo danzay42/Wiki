@@ -11,7 +11,6 @@ https://command-not-found.com/
 - cal | date
 - strace | rtrace | autrace
 - xargs
-- seq
 - test | `[` | `[[`
 - watch
 - time -> [hyperfine](https://github.com/sharkdp/hyperfine)
