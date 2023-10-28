@@ -9,25 +9,20 @@
 
 # PACELC Theorem
 
-```
-if Partition Tolerance:
-	Consistency or Availability
-else:
-	Consistency or Latancy
-```
-
 ```mermaid
 flowchart TD
 	subgraph PACELC
-		p(Resistance)
 		subgraph CAP
-			x1((?))
+			p(Partition Tolerance)
 			c(Consistency)
 			a(Availability)
-			p --> x1
-			x1 --> c & a
+			x((yes))
+			p --> x --> c & a
 		end
-		p --> c & l
+		c1(Consistency)
+		l(latancy)
+		x1((no))
+		p --> x1 --> c1 & l
 	end
 ```
 
