@@ -19,9 +19,15 @@ else:
 ```mermaid
 flowchart TD
 	subgraph PACELC
+		p(Resistance)
 		subgraph CAP
-			c
+			x1((?))
+			c(Consistency)
+			a(Availability)
+			p --> x1
+			x1 --> c & a
 		end
+		p --> c & l
 	end
 ```
 
