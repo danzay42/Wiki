@@ -11,3 +11,8 @@ date: 2023-09-02
  - Monolithic
  - Micro-kernel (Plugin)
  - Microservices
+
+# Типы
+
+- клиент-серверная
+- p2p (peer-)
