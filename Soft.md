@@ -103,6 +103,7 @@ Lazy (all plugins)-> Mason (nice lsp plugins)
 
 
 [pass](https://www.passwordstore.org/) + [pgen](https://github.com/ctsrc/Pgen) | bitwarden
+[]
 
 [python_computer_vision](https://github.com/roboflow/supervision)
 [llama-terminal-completion](https://github.com/adammpkins/llama-terminal-completion)
@@ -113,7 +114,9 @@ Lazy (all plugins)-> Mason (nice lsp plugins)
 [matterbridge](https://github.com/42wim/matterbridge) - messenger bridge 
 
 ## Develop
-https://github.com/authorizerdev/authorizer
+[authentication](https://github.com/authorizerdev/authorizer)
+[version control](https://github.com/peritus/bumpversion)
+[makefile+dokerfile+bash+...](https://earthly.dev/)
 
 ## Android
 OS:
@@ -123,7 +126,7 @@ Store:
 - [Obtainium](https://github.com/ImranR98/Obtainium)
 - [F-droid](https://f-droid.org/ru/)
 
-[ente_auth](https://github.com/ente-io/auth)
+[ente-auth](https://github.com/ente-io/auth)
 [torrent]https://gitlab.com/proninyaroslav/libretorrent
 [revanced-manager](https://github.com/ReVanced/revanced-manager)
 
