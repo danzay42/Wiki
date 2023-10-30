@@ -118,20 +118,6 @@ Lazy (all plugins)-> Mason (nice lsp plugins)
 [http-tracker](https://github.com/venukbh/http-tracker)
 [перевод видео](https://github.com/ilyhalight/voice-over-translation)
 
-## Develop
-[commits](https://www.conventionalcommits.org)
-[versioning](https://semver.org/) + [control](https://github.com/peritus/bumpversion)
-[gitignore](https://docs.gitignore.io/)
-[licence](https://choosealicense.com/)
-[12factor](https://12factor.net/)
-
-[authentication](https://github.com/authorizerdev/authorizer)
-
-[vm container](https://github.com/kata-containers/)
-[web echo page](http://termbin.com/)
-[free domain](https://freemyip.com/)
-[server-free file sync](https://syncthing.net/)
-
 ### Build tools
 [earthly](https://earthly.dev/) makefile+dokerfile+bash+...
 [gradle](https://gradle.org/) groovy | kotlin
