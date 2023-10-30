@@ -119,10 +119,11 @@ Lazy (all plugins)-> Mason (nice lsp plugins)
 [перевод видео](https://github.com/ilyhalight/voice-over-translation)
 
 ## Develop
-[version control](https://github.com/peritus/bumpversion)
+[commits](https://www.conventionalcommits.org)
+[versioning](https://semver.org/) + [control](https://github.com/peritus/bumpversion)
 [gitignore](https://docs.gitignore.io/)
-
 [licence](https://choosealicense.com/)
+[12factor](https://12factor.net/)
 
 [authentication](https://github.com/authorizerdev/authorizer)
 
@@ -132,9 +133,9 @@ Lazy (all plugins)-> Mason (nice lsp plugins)
 [server-free file sync](https://syncthing.net/)
 
 ### Build tools
-[makefile+dokerfile+bash+...](https://earthly.dev/)
-[gradle](https://gradle.org/)
-[meson](https://mesonbuild.com/)
+[earthly](https://earthly.dev/) makefile+dokerfile+bash+...
+[gradle](https://gradle.org/) groovy | kotlin
+[meson](https://mesonbuild.com/) python
 
 ## Android
 OS:
