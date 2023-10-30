@@ -49,7 +49,7 @@ dunstify
 - [bat-extras](https://github.com/eth-p/bat-extras/tree/master)
 - atuin (best serch for command history)
 - eva (calculator)
-- [ffmpeg](https://ffmpeg.org/)
+
 - [pandoc](https://pandoc.org/)
 
 ## Terminal
@@ -63,7 +63,8 @@ dunstify
 - nano
 - vi -> vim -> [nvim](https://neovim.io/)
 - [helix](https://helix-editor.com/)
-### Vim plugins
+
+### Neovim plugins
 https://vimawesome.com/
 https://github.com/folke/lazy.nvim
 https://github.com/williamboman/mason.nvim
@@ -95,6 +96,12 @@ Lazy (all plugins)-> Mason (nice lsp plugins)
 	cd ../
 	rm -rf nerd-fonts
 	```
+
+## ALL
+
+[camera](https://github.com/weebney/webcamize)
+[ffmpeg](https://ffmpeg.org/)
+[youtube](https://github.com/BKSalman/ytdlp-gui)
 
 
 # Programming
