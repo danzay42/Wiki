@@ -130,6 +130,8 @@ Lazy (all plugins)-> Mason (nice lsp plugins)
 [makefile+dokerfile+bash+...](https://earthly.dev/)
 [vm container](https://github.com/kata-containers/)
 [web echo page](http://termbin.com/)
+[free domain](https://freemyip.com/)
+[server-free file sync](https://syncthing.net/)
 
 ## Android
 OS:
