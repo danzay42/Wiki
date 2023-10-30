@@ -103,11 +103,18 @@ Lazy (all plugins)-> Mason (nice lsp plugins)
 
 [python_computer_vision](https://github.com/roboflow/supervision)
 [llama-terminal-completion](https://github.com/adammpkins/llama-terminal-completion)
-[перевод видео](https://github.com/ilyhalight/voice-over-translation)
 
 [AI-tools](https://github.com/jamesmurdza/awesome-ai-devtools)
 
 [matterbridge](https://github.com/42wim/matterbridge) - messenger bridge 
+
+[cross-platform file explorer](https://github.com/kimlimjustin/xplorer)
+
+## Browser
+[home-page](https://github.com/b-coimbra/dawn)
+[home-page](https://github.com/AllJavi/tartarus-startpage)
+[http-tracker](https://github.com/venukbh/http-tracker)
+[перевод видео](https://github.com/ilyhalight/voice-over-translation)
 
 ## Develop
 [authentication](https://github.com/authorizerdev/authorizer)
@@ -123,11 +130,11 @@ Store:
 - [Obtainium](https://github.com/ImranR98/Obtainium)
 - [F-droid](https://f-droid.org/ru/)
 
-[ttl-changer](https://github.com/aleksey-saenko/TTLChanger)
-[copy-sms-code](https://github.com/jd1378/otphelper)
+[ttl changer](https://github.com/aleksey-saenko/TTLChanger)
+[copy sms code](https://github.com/jd1378/otphelper)
 [ente-auth](https://github.com/ente-io/auth)
-[torrent]https://gitlab.com/proninyaroslav/libretorrent
-[revanced-manager](https://github.com/ReVanced/revanced-manager)
+[torrent](https://gitlab.com/proninyaroslav/libretorrent)
+[revanced manager](https://github.com/ReVanced/revanced-manager)
 
 ## Password
 [pass](https://www.passwordstore.org/) + [pgen](https://github.com/ctsrc/Pgen) | bitwarden
