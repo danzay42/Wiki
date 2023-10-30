@@ -112,6 +112,10 @@ Lazy (all plugins)-> Mason (nice lsp plugins)
 
 [library](https://github.com/Librum-Reader/Librum)
 
+## Messengers
+[simplex-chat](https://github.com/simplex-chat/simplex-chat)
+[arpchat](https://github.com/kognise/arpchat)
+
 ## Browser
 [home-page](https://github.com/b-coimbra/dawn) -> [home-page](https://github.com/AllJavi/tartarus-startpage)
 [http-tracker](https://github.com/venukbh/http-tracker)
@@ -136,6 +140,11 @@ Store:
 [ente-auth](https://github.com/ente-io/auth)
 [torrent](https://gitlab.com/proninyaroslav/libretorrent)
 [revanced manager](https://github.com/ReVanced/revanced-manager)
+
+## wifi-Router OS
+https://openwrt.org/
+https://dd-wrt.com/
+https://librecmc.org/
 
 ## Password
 [pass](https://www.passwordstore.org/) + [pgen](https://github.com/ctsrc/Pgen) | bitwarden
