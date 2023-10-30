@@ -97,6 +97,8 @@ Lazy (all plugins)-> Mason (nice lsp plugins)
 	```
 
 ## ALL
+https://suckless.org/
+
 [camera_capture](https://github.com/weebney/webcamize) + [ffmpeg](https://ffmpeg.org/)
 [youtube_download](https://github.com/BKSalman/ytdlp-gui)
 [python_computer_vision](https://github.com/roboflow/supervision)
