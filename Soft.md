@@ -123,10 +123,6 @@ https://suckless.org/
 [http-tracker](https://github.com/venukbh/http-tracker)
 [перевод видео](https://github.com/ilyhalight/voice-over-translation)
 
-### Build tools
-[earthly](https://earthly.dev/) makefile+dokerfile+bash+...
-[gradle](https://gradle.org/) groovy | kotlin
-[meson](https://mesonbuild.com/) python
 
 ## Android
 OS:
