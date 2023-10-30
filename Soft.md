@@ -100,6 +100,7 @@ Lazy (all plugins)-> Mason (nice lsp plugins)
 https://suckless.org/
 
 [camera_capture](https://github.com/weebney/webcamize) + [ffmpeg](https://ffmpeg.org/)
+[youtube_cli](https://github.com/yt-dlp/yt-dlp)
 [youtube_download](https://github.com/BKSalman/ytdlp-gui)
 [python_computer_vision](https://github.com/roboflow/supervision)
 [llama-terminal-completion](https://github.com/adammpkins/llama-terminal-completion)
@@ -108,6 +109,8 @@ https://suckless.org/
 [cross-platform file explorer](https://github.com/kimlimjustin/xplorer)
 [library](https://github.com/Librum-Reader/Librum)
 [bootable usb OS](https://www.ventoy.net/en/index.html)
+
+[python web scrapper](https://scrapy.org/)
 
 ## Messengers
 [simplex-chat](https://github.com/simplex-chat/simplex-chat)
