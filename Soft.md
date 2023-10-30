@@ -101,10 +101,6 @@ Lazy (all plugins)-> Mason (nice lsp plugins)
 [camera_capture](https://github.com/weebney/webcamize) + [ffmpeg](https://ffmpeg.org/)
 [youtube_download](https://github.com/BKSalman/ytdlp-gui)
 
-
-[pass](https://www.passwordstore.org/) + [pgen](https://github.com/ctsrc/Pgen) | bitwarden
-[]
-
 [python_computer_vision](https://github.com/roboflow/supervision)
 [llama-terminal-completion](https://github.com/adammpkins/llama-terminal-completion)
 [перевод видео](https://github.com/ilyhalight/voice-over-translation)
@@ -117,6 +113,7 @@ Lazy (all plugins)-> Mason (nice lsp plugins)
 [authentication](https://github.com/authorizerdev/authorizer)
 [version control](https://github.com/peritus/bumpversion)
 [makefile+dokerfile+bash+...](https://earthly.dev/)
+[vm container](https://github.com/kata-containers/)
 
 ## Android
 OS:
@@ -126,9 +123,16 @@ Store:
 - [Obtainium](https://github.com/ImranR98/Obtainium)
 - [F-droid](https://f-droid.org/ru/)
 
+[ttl-changer](https://github.com/aleksey-saenko/TTLChanger)
+[copy-sms-code](https://github.com/jd1378/otphelper)
 [ente-auth](https://github.com/ente-io/auth)
 [torrent]https://gitlab.com/proninyaroslav/libretorrent
 [revanced-manager](https://github.com/ReVanced/revanced-manager)
+
+## Password
+[pass](https://www.passwordstore.org/) + [pgen](https://github.com/ctsrc/Pgen) | bitwarden
+[gpg-tui](https://github.com/orhun/gpg-tui)
+
 
 ## Security
 https://github.com/w4/pisshoff - ssh trap
