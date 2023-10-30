@@ -111,13 +111,14 @@ Lazy (all plugins)-> Mason (nice lsp plugins)
 [cross-platform file explorer](https://github.com/kimlimjustin/xplorer)
 
 [library](https://github.com/Librum-Reader/Librum)
-[web]
+
 
 ## Messengers
 [simplex-chat](https://github.com/simplex-chat/simplex-chat)
 [arpchat](https://github.com/kognise/arpchat)
 
 ## Browser
+[tampermonkey](https://www.tampermonkey.net/)
 [vi-motions](https://github.com/brookhong/Surfingkeys)
 [home-page](https://github.com/b-coimbra/dawn) -> [home-page](https://github.com/AllJavi/tartarus-startpage)
 [http-tracker](https://github.com/venukbh/http-tracker)
@@ -128,6 +129,7 @@ Lazy (all plugins)-> Mason (nice lsp plugins)
 [version control](https://github.com/peritus/bumpversion)
 [makefile+dokerfile+bash+...](https://earthly.dev/)
 [vm container](https://github.com/kata-containers/)
+[web echo page](http://termbin.com/)
 
 ## Android
 OS:
