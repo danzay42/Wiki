@@ -163,6 +163,7 @@ sudo usermod -aG dialout $USER
 ```
 
 ## Arch
+%% TODO: move to https://artixlinux.org/ %%
 
 ```shell
 # base
