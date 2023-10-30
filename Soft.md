@@ -110,17 +110,22 @@ Lazy (all plugins)-> Mason (nice lsp plugins)
 
 [AI-tools](https://github.com/jamesmurdza/awesome-ai-devtools)
 
+[matterbridge](https://github.com/42wim/matterbridge) - messenger bridge 
+
+## Develop
+https://github.com/authorizerdev/authorizer
+
 ## Android
 OS:
 - https://droidian.org/
+
 Store:
 - [Obtainium](https://github.com/ImranR98/Obtainium)
 - [F-droid](https://f-droid.org/ru/)
 
-Auth:
-- [ente_auth](https://github.com/ente-io/auth)
-
-[youtube_revanced-manager](https://github.com/ReVanced/revanced-manager)
+[ente_auth](https://github.com/ente-io/auth)
+[torrent]https://gitlab.com/proninyaroslav/libretorrent
+[revanced-manager](https://github.com/ReVanced/revanced-manager)
 
 ## Security
 https://github.com/w4/pisshoff - ssh trap
