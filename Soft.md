@@ -119,13 +119,22 @@ Lazy (all plugins)-> Mason (nice lsp plugins)
 [перевод видео](https://github.com/ilyhalight/voice-over-translation)
 
 ## Develop
-[authentication](https://github.com/authorizerdev/authorizer)
 [version control](https://github.com/peritus/bumpversion)
-[makefile+dokerfile+bash+...](https://earthly.dev/)
+[gitignore](https://docs.gitignore.io/)
+
+[licence](https://choosealicense.com/)
+
+[authentication](https://github.com/authorizerdev/authorizer)
+
 [vm container](https://github.com/kata-containers/)
 [web echo page](http://termbin.com/)
 [free domain](https://freemyip.com/)
 [server-free file sync](https://syncthing.net/)
+
+### Build tools
+[makefile+dokerfile+bash+...](https://earthly.dev/)
+[gradle](https://gradle.org/)
+[meson](https://mesonbuild.com/)
 
 ## Android
 OS:
