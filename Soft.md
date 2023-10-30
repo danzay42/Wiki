@@ -62,6 +62,13 @@ dunstify
 ## Text Editor (VI)
 - nano
 - vi -> vim -> [nvim](https://neovim.io/)
+- [helix](https://helix-editor.com/)
+### Vim plugins
+https://vimawesome.com/
+https://github.com/folke/lazy.nvim
+https://github.com/williamboman/mason.nvim
+https://github.com/ryanoasis/vim-devicons
+https://github.com/ryanoasis/nerd-fonts#glyph-sets
 
 ### Plugins & utils:
 Lazy (all plugins)-> Mason (nice lsp plugins)
