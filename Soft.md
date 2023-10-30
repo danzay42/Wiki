@@ -107,6 +107,11 @@ Lazy (all plugins)-> Mason (nice lsp plugins)
 [llama-terminal-completion](https://github.com/adammpkins/llama-terminal-completion)
 [перевод видео](https://github.com/ilyhalight/voice-over-translation)
 
+
+## Android
+Store:
+- [Obtainium](https://github.com/ImranR98/Obtainium)
+
 # Programming
 ---
 
