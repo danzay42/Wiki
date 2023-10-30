@@ -43,7 +43,6 @@ dunstify
 # Soft
 ---
 
-- bitwarden
 - qbittorrent | fragments (gnome)
 - [entr](https://github.com/clibs/entr) (event notify test runner)
 - [bat-extras](https://github.com/eth-p/bat-extras/tree/master)
@@ -101,8 +100,12 @@ Lazy (all plugins)-> Mason (nice lsp plugins)
 
 [camera_capture](https://github.com/weebney/webcamize) + [ffmpeg](https://ffmpeg.org/)
 [youtube_download](https://github.com/BKSalman/ytdlp-gui)
-[pass](https://www.passwordstore.org/) + [pgen](https://github.com/ctsrc/Pgen)
 
+[pass](https://www.passwordstore.org/) + [pgen](https://github.com/ctsrc/Pgen) | bitwarden
+
+[python_computer_vision](https://github.com/roboflow/supervision)
+[llama-terminal-completion](https://github.com/adammpkins/llama-terminal-completion)
+[перевод видео](https://github.com/ilyhalight/voice-over-translation)
 
 # Programming
 ---
