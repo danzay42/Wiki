@@ -97,21 +97,15 @@ Lazy (all plugins)-> Mason (nice lsp plugins)
 	```
 
 ## ALL
-
 [camera_capture](https://github.com/weebney/webcamize) + [ffmpeg](https://ffmpeg.org/)
 [youtube_download](https://github.com/BKSalman/ytdlp-gui)
-
 [python_computer_vision](https://github.com/roboflow/supervision)
 [llama-terminal-completion](https://github.com/adammpkins/llama-terminal-completion)
-
 [AI-tools](https://github.com/jamesmurdza/awesome-ai-devtools)
-
 [matterbridge](https://github.com/42wim/matterbridge) - messenger bridge 
-
 [cross-platform file explorer](https://github.com/kimlimjustin/xplorer)
-
 [library](https://github.com/Librum-Reader/Librum)
-
+[bootable usb OS](https://www.ventoy.net/en/index.html)
 
 ## Messengers
 [simplex-chat](https://github.com/simplex-chat/simplex-chat)
@@ -155,7 +149,6 @@ https://librecmc.org/
 ## Password
 [pass](https://www.passwordstore.org/) + [pgen](https://github.com/ctsrc/Pgen) | bitwarden
 [gpg-tui](https://github.com/orhun/gpg-tui)
-
 
 ## Security
 https://github.com/w4/pisshoff - ssh trap
