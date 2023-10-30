@@ -100,12 +100,16 @@ Lazy (all plugins)-> Mason (nice lsp plugins)
 
 [camera_capture](https://github.com/weebney/webcamize) + [ffmpeg](https://ffmpeg.org/)
 [youtube_download](https://github.com/BKSalman/ytdlp-gui)
+[youtube_revanced-manager](https://github.com/ReVanced/revanced-manager)
 
 [pass](https://www.passwordstore.org/) + [pgen](https://github.com/ctsrc/Pgen) | bitwarden
 
 [python_computer_vision](https://github.com/roboflow/supervision)
 [llama-terminal-completion](https://github.com/adammpkins/llama-terminal-completion)
 [перевод видео](https://github.com/ilyhalight/voice-over-translation)
+
+[AI-tools](https://github.com/jamesmurdza/awesome-ai-devtools)
+[pdf_view](https://pwmt.org/projects/zathura/)
 
 
 ## Android
@@ -125,7 +129,7 @@ Store:
 - **interactive**: python | bpython | ipython
 - **formatters**: isort | black
 - **linters**: pylint | flake8 | ruff
-- **typing**: mypy
+- **typing**: mypy | pyright
 - **test runners**: unittest | pytest -> tox
 - **documentation**: Sphinx
 - **build & publish**: build + twine
