@@ -115,11 +115,16 @@ Lazy (all plugins)-> Mason (nice lsp plugins)
 ## Android
 Store:
 - [Obtainium](https://github.com/ImranR98/Obtainium)
+- [F-droid](https://f-droid.org/ru/)
 
 Auth:
-- 
+- [ente_auth](https://github.com/ente-io/auth)
 
 [youtube_revanced-manager](https://github.com/ReVanced/revanced-manager)
+
+## Security
+https://github.com/w4/pisshoff
+
 
 # Programming
 ---
