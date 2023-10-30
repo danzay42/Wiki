@@ -111,12 +111,14 @@ Lazy (all plugins)-> Mason (nice lsp plugins)
 [cross-platform file explorer](https://github.com/kimlimjustin/xplorer)
 
 [library](https://github.com/Librum-Reader/Librum)
+[web]
 
 ## Messengers
 [simplex-chat](https://github.com/simplex-chat/simplex-chat)
 [arpchat](https://github.com/kognise/arpchat)
 
 ## Browser
+[vi-motions](https://github.com/brookhong/Surfingkeys)
 [home-page](https://github.com/b-coimbra/dawn) -> [home-page](https://github.com/AllJavi/tartarus-startpage)
 [http-tracker](https://github.com/venukbh/http-tracker)
 [перевод видео](https://github.com/ilyhalight/voice-over-translation)
