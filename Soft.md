@@ -102,6 +102,7 @@ https://suckless.org/
 [camera_capture](https://github.com/weebney/webcamize) + [ffmpeg](https://ffmpeg.org/)
 [youtube_cli](https://github.com/yt-dlp/yt-dlp)
 [youtube_download](https://github.com/BKSalman/ytdlp-gui)
+[youtube_download2](https://github.com/jely2002/youtube-dl-gui)
 [python_computer_vision](https://github.com/roboflow/supervision)
 [llama-terminal-completion](https://github.com/adammpkins/llama-terminal-completion)
 [AI-tools](https://github.com/jamesmurdza/awesome-ai-devtools)
