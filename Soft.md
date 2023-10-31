@@ -163,14 +163,7 @@ https://web.telegram.org/k/#@open_source_friend - file transfer
 - [lazygit](https://github.com/jesseduffield/lazygit)
 - [gitui](https://github.com/extrawurst/gitui)
 
-## Python
-- **interactive**: python | bpython | ipython
-- **formatters**: isort + black
-- **linters**: pylint | flake8 | ruff
-- **typing**: mypy | pyright
-- **test runners**: unittest + pytest + tox
-- **documentation**: Sphinx
-- **build & publish**: build + twine
+
 
 ## Rust
 - irust
