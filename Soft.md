@@ -157,18 +157,6 @@ https://librecmc.org/
 https://github.com/w4/pisshoff - ssh trap
 https://web.telegram.org/k/#@open_source_friend - file transfer
 
-
-# Programming
----
-
-- [tokei](https://github.com/XAMPPRocky/tokei)
-
-
-## Rust
-- irust
-- [Evcxr](https://github.com/evcxr/evcxr)
-- cargo-info
-
 # Configs
 ---
 
