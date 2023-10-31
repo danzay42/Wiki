@@ -114,6 +114,10 @@ https://suckless.org/
 
 [python web scrapper](https://scrapy.org/)
 
+## [Git](https://git-scm.com/book/en/v2)
+- [lazygit](https://github.com/jesseduffield/lazygit)
+- [gitui](https://github.com/extrawurst/gitui)
+
 ## Messengers
 [simplex-chat](https://github.com/simplex-chat/simplex-chat)
 [arpchat](https://github.com/kognise/arpchat)
@@ -158,11 +162,6 @@ https://web.telegram.org/k/#@open_source_friend - file transfer
 ---
 
 - [tokei](https://github.com/XAMPPRocky/tokei)
-
-## [Git](https://git-scm.com/book/en/v2)
-- [lazygit](https://github.com/jesseduffield/lazygit)
-- [gitui](https://github.com/extrawurst/gitui)
-
 
 
 ## Rust
