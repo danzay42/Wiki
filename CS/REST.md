@@ -4,7 +4,7 @@
 1. Client-Server architecture
 2. Stateless
 3. Cacheable
-4. [[REST#CRUD + HTTP|Uniform interface]]
+4. [[REST#Uniform interface]]
 5. Layered system architecture
 6. Code on demand
 
@@ -28,16 +28,12 @@ A(Клиенты) <--> B(Транспорт) <--> C(Ресурсы)
 - принимать/отдавать всегда один и тот же формат упаковки, например json
 - сложные запросы ```/resource/{id}/property```
 
-## CRUD + [[HTTP]]
-- Create - POST
-- Read - GET
-- Update - PUT
-- Delete - DELETE
+## Uniform interface
 
-| method    | URI                   |                |
-| --------- | --------------------- | -------------- |
-| POST      | /resource***s***      | создать новый ресурс |
-| GET       | /resource***s***/{id} |                |
-| DELETE    | /resource***s***/{id} |                |
-| PUT/PATCH | /resource***s***/{id} |                |
-| GET       | /resource***s***      |                |
+| [[HTTP#Методы\|method]] | URI                   | CRUD                          |
+| ----------------------- | --------------------- | ----------------------------- |
+| POST                    | /resource***s***      | создать новый ресурс          |
+| GET                     | /resource***s/{id}*** | получить определенный ресурс  |
+| DELETE                  | /resource***s/{id}*** | удалить ресурс                |
+| PUT/PATCH               | /resource***s/{id}*** | обновить ресурс               |
+| GET                     | /resource***s***      | получить все доступные ресурс |
