@@ -15,5 +15,5 @@ Envelop/Header/Body
 
 # GraphQL
 QUERY - GET
-MUTATION - POST
+MUTATION - POST/PUT/DELETE
 SUBSCRIPTION - real time data (WebSockets)
