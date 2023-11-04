@@ -1,19 +1,19 @@
 **HyperText Transfer Protocol** - Протокол предназначенный для передачи текстовых данных. Расширен для передачи любых [[HTTP#MIME|данных]]
 
-# Запрос
-```
+## Запрос
+```shell
 $methode $endpoint HTTP/$version
 $headers
 $body
 ```
-# Ответ
-```
+## Ответ
+```shell
 HTTP/$version $status_code
 $headers
 $body
 ```
 
-# Status Codes
+#  Status Codes
 
 | Code | Meaning                   |
 |:---- | ------------------------- |

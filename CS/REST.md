@@ -1,10 +1,3 @@
----
-title: REST
-tags: Interactions 
-aliases: 
-date: 2023-09-13
----
-
 # REST Architecture
 [Architectural Styles and the Design of Network-based Software Architectures](https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm)
 
