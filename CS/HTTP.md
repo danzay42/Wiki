@@ -1,4 +1,4 @@
-**HyperText Transfer Protocol** - Протокол предназначенный для передачи текстовых данных. Расширен для передачи любых [[HTTP#MIME|данных]]
+**HyperText Transfer Protocol** - Протокол предназначенный для передачи текстовых данных. Расширен для передачи любых [[HTTP#MIME types|данных]]
 
 ## Запрос
 ```shell
@@ -31,5 +31,5 @@ DELETE - удаление ресурса
 
 # Headers
 
-## MIME
+## MIME types
 **Multipurpose Internet Mail Extensions** - стандарт, описывающий передачу различных типов данных `multipart/mixed`
