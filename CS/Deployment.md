@@ -1,5 +1,6 @@
 
-\- | SaaS | PaaS | IasS | On-site
+| \-  | SaaS | PaaS | IasS | On-site |
+| --- | :-:  | :-:  | ---- | ------- |
 --- | :-: | :-: | :-: | :-:
 Application | + | - | - | - 
 Data | + | - | - | - 

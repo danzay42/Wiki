@@ -26,7 +26,7 @@
 - Graph
 - Hash Table
 
-DataStruct | Searching | Insertion | Deletion
---- | --- | --- | ---
-Binary search tree | O(log n)
+| DataStruct         | Searching | Insertion | Deletion |
+| ------------------ | --------- | --------- | -------- |
+| Binary search tree | O(log n)  |           |          |
 
