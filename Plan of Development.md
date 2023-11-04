@@ -39,7 +39,7 @@
 
 # [[Design Patterns|Паттерны]]
 
-# [[REST]]
+# [[REST API]]
 
 # [[Tests|Тестирование]]
 
