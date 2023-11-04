@@ -47,12 +47,12 @@
 
 ## Базовые наборы метрик
 
-4 golden signals | RED | USE
---- | --- | ---
-Latency | **R**ate | **U**tilization
-Traffic | **E**rrors | **S**aturation
-Errors | **D**uration | **E**rrors
-Saturation |
+| 4 golden signals | RED          | USE             |
+| ---------------- | ------------ | --------------- |
+| Latency          | **R**ate     | **U**tilization |
+| Traffic          | **E**rrors   | **S**aturation  |
+| Errors           | **D**uration | **E**rrors      |
+| Saturation       |              |                 |
 
 
 # Используемые технологии
