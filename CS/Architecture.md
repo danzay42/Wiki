@@ -13,6 +13,6 @@ date: 2023-09-02
  - Microservices
 
 # Типы
-- клиент-серверная
+- клиент-серверная [[Client-Server]]
 - p2p (peer-to-peer)
 - файл-серверная
