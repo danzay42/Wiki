@@ -35,14 +35,11 @@ DELETE - удаление ресурса
 **Multipurpose Internet Mail Extensions** - стандарт, описывающий передачу различных типов данных `multipart/mixed`
 
 # Evolution
-| version | description   |
-| ------- | ------------- |
-| 1       | HTTP over TCP |
-| 1.1        |               |
-
-- HTTP/1 - 
-- HTTP/1.1
-
-## HTTP/2
-
-## HTTP/3
+| version | description                                        |
+| ------- | -------------------------------------------------- |
+| 1       | HTTP over TCP                                      |
+| 1.1     | "keep-alive" mechanism - reuse same TCP connection |
+| 1.1     | (removed) pipelining - parallel requests           |
+| 2       | HTTP "streams" - compressed headers                |
+| 2       | "subscriptions"                                    |
+| 3       |                                                    |
