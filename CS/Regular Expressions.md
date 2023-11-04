@@ -15,14 +15,14 @@ date: 2023-08-19
 
 **Паттерн** состоит из [[Regular Expressions#Символы|символов]] и [[Regular Expressions#Квантификаторы|квантификаторов]] к ним
 
-| Модификатор | Описание                                                             |
-| ----------- | -------------------------------------------------------------------- |
-| g           | global - don't return after first match                              |
-| m           | multi-line - `^` and `$` match start/end of line                     |
-| i           | case insensitive match                                               |
-| s           | single line - текст трактуется как одна строка (`.` matches newline) |
-| u           | match with full Unicode                                              |
-| `...`       | `...`                                                                |
+|  mod  | Описание                                                             |
+|:-----:| -------------------------------------------------------------------- |
+|   g   | global - don't return after first match                              |
+|   m   | multi-line - `^` and `$` match start/end of line                     |
+|   i   | case insensitive match                                               |
+|   s   | single line - текст трактуется как одна строка (`.` matches newline) |
+|   u   | match with full Unicode                                              |
+| `...` | `...`                                                                |
 
 # Специальные символы
 
@@ -77,7 +77,7 @@ date: 2023-08-19
 
 # Группы
 
-|                 | Описание                                            |
+|  Представление  | Описание                                            |
 |:---------------:| --------------------------------------------------- |
 |     `(...)`     | группы нужны для выделения под-паттернов в паттерне |
 |    `(?:...)`    | non-capturing group                                 |
@@ -91,10 +91,10 @@ date: 2023-08-19
 Специфичные выражения, используемые для работы с файлами в командных оболочках. Специфичны для каждой оболочки.
 Командная оболочка может иметь расширенный набор глобов (extglob).
 
-wildcard | regex | Описание
-:-: | :-: | ---
-`*` | `.*` | match any number of any character including none
-`?` | `.` | match any single character
-`[abc]` | `[abc]` | match one character from the set
-`[a-z]` | `[a-z]` | match one set character from the range
-`[^a-z]`<br>`[!a-z]` | `[^a-z]` | match one character that is not in the set
+|       wildcard       |  regex   | Описание                                         |
+|:--------------------:|:--------:| ------------------------------------------------ |
+|         `*`          |   `.*`   | match any number of any character including none |
+|         `?`          |   `.`    | match any single character                       |
+|       `[abc]`        | `[abc]`  | match one character from the set                 |
+|       `[a-z]`        | `[a-z]`  | match one set character from the range           |
+| `[^a-z]`<br>`[!a-z]` | `[^a-z]` | match one character that is not in the set       |
