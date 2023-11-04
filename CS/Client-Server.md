@@ -8,7 +8,6 @@
 WEBSOCKETS - Сетевой протокол
 RPC (GRPC, TRPC) - Удаленный вызов процедур
 
-
 # SOAP
 WSDL - язык описания SOAP сервисов
 Envelop/Header/Body
