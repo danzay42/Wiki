@@ -41,5 +41,5 @@ DELETE - удаление ресурса
 | 1.1     | "keep-alive" mechanism - reuse same TCP connection |
 | 1.1     | (removed) pipelining - parallel requests           |
 | 2       | HTTP "streams" - compressed headers                |
-| 2       | "subscriptions"                                    |
-| 3       |                                                    |
+| 2       | "subscriptions" - poll                             |
+| 3       | **QUIC** - based on UDP streams                    |
