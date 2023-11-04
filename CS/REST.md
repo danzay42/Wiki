@@ -3,7 +3,7 @@
 
 1. Client-Server architecture
 2. Stateless
-3. Cacheable
+3. [[REST#Cacheable]]
 4. [[REST#Uniform interface]]
 5. Layered system architecture
 6. Code on demand
@@ -17,8 +17,8 @@ A(Клиенты) <--> B(Транспорт) <--> C(Ресурсы)
 
 # REST API
 ## Best Practice
-- конечные точки URL (endpoints) - существительные (ресурсы) ```/resource/{id}```
-- множественное число ```/resources```
+- конечные точки URL (endpoints) - существительные (ресурсы) `/resource/{id}`
+- множественное число `/resources`
 - документация ([Swagger/OpenAPI](https://swagger.io/))
 - версия api указана в пути
 - пагинация
@@ -26,14 +26,20 @@ A(Клиенты) <--> B(Транспорт) <--> C(Ресурсы)
 - Правильное использование http-методов
 - Правильное использование http-кодов ответов
 - принимать/отдавать всегда один и тот же формат упаковки, например json
-- сложные запросы ```/resource/{id}/property```
+- сложные запросы `/resource/{id}/property`
 
-## Uniform interface
+# Uniform interface
 
-| [[HTTP#Методы\|method]] | URI                   | CRUD                          |
-| ----------------------- | --------------------- | ----------------------------- |
-| POST                    | /resource***s***      | создать новый ресурс          |
-| GET                     | /resource***s/{id}*** | получить определенный ресурс  |
-| DELETE                  | /resource***s/{id}*** | удалить ресурс                |
-| PUT/PATCH               | /resource***s/{id}*** | обновить ресурс               |
-| GET                     | /resource***s***      | получить все доступные ресурс |
+| [[HTTP#Методы\|method]] | URI               | CRUD                          |
+| ----------------------- | ----------------- | ----------------------------- |
+| POST                    | `/resources`      | создать новый ресурс          |
+| GET                     | `/resources/{id}` | получить определенный ресурс  |
+| DELETE                  | `/resources/{id}` | удалить ресурс                |
+| PUT/PATCH               | `/resources/{id}` | обновить ресурс               |
+| GET                     | `/resources`      | получить все доступные ресурс |
+
+# Cacheable
+| Кешируемые | Не кешируемые |
+| ---------- | ------------- |
+| GET        | PUT           |
+| POST       | DELETE        |
