@@ -13,13 +13,13 @@ $body
 
 # Status Codes
 
-Code | Meaning
-:-- | ---
-1xx | Info (не содержат данных)
-2xx | Success
-3xx | Redirect
-4xx | Client Error
-5xx | Server Error
+| Code | Meaning                   |
+|:---- | ------------------------- |
+| 1xx  | Info (не содержат данных) |
+| 2xx  | Success                   |
+| 3xx  | Redirect                  |
+| 4xx  | Client Error              |
+| 5xx  | Server Error              |
 
 # MIME types #MIME
 Multipurpose Internet Mail Extensions - стандарт, описывающий передачу различных типов данных `multipart/mixed`
