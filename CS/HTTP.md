@@ -33,3 +33,16 @@ DELETE - удаление ресурса
 
 ## MIME types
 **Multipurpose Internet Mail Extensions** - стандарт, описывающий передачу различных типов данных `multipart/mixed`
+
+# Evolution
+| version | description   |
+| ------- | ------------- |
+| 1       | HTTP over TCP |
+| 1.1        |               |
+
+- HTTP/1 - 
+- HTTP/1.1
+
+## HTTP/2
+
+## HTTP/3
