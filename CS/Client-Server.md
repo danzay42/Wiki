@@ -4,7 +4,7 @@
 [[HTTP]] - Сетевой протокол прикладного уровня
 [[REST API]] - Архитектурный стиль
 [[Client-Server#SOAP]] - Протокол обмена структурированными сообщениями
-GRAPHQL - Язык запросов
+[[Client-Server#GraphQL]] - Язык запросов
 WEBSOCKETS - Сетевой протокол
 RPC (GRPC, TRPC) - Удаленный вызов процедур
 
@@ -13,4 +13,7 @@ RPC (GRPC, TRPC) - Удаленный вызов процедур
 WSDL - язык описания SOAP сервисов
 Envelop/Header/Body
 
-# Grap
+# GraphQL
+QUERY - GET
+MUTATION - POST
+SUBSCRIPTION - real time data (WebSockets)
