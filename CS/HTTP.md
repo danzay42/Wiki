@@ -1,4 +1,4 @@
-
+**HyperText Transfer Protocol** - Протокол предназначенный для передачи текстовых данных. Расширен для передачи любых [[HTTP#MIME|данных]]
 
 # Запрос
 ```
@@ -23,5 +23,5 @@ $body
 | 4xx  | Client Error              |
 | 5xx  | Server Error              |
 
-# MIME types #MIME
-Multipurpose Internet Mail Extensions - стандарт, описывающий передачу различных типов данных `multipart/mixed`
+# MIME
+**Multipurpose Internet Mail Extensions** - стандарт, описывающий передачу различных типов данных `multipart/mixed`
