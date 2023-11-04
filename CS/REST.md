@@ -28,7 +28,7 @@ A(Клиенты) <--> B(Транспорт) <--> C(Ресурсы)
 - принимать/отдавать всегда один и тот же формат упаковки, например json
 - сложные запросы ```/resource/{id}/property```
 
-## CRUD + HTTP
+## CRUD + [[HTTP]]
 - Create - POST
 - Read - GET
 - Update - PUT

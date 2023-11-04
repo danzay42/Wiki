@@ -13,8 +13,14 @@ $headers
 $body
 ```
 
-#  Status Codes
+# Методы
+GET - получение ресурса
+POST - передача (создание) ресурса
+PUT - обновление ресурса
+PATCH - частичное обновление ресурса
+DELETE - удаление ресурса
 
+# Status Codes
 | Code | Meaning                   |
 |:---- | ------------------------- |
 | 1xx  | Info (не содержат данных) |
@@ -23,5 +29,7 @@ $body
 | 4xx  | Client Error              |
 | 5xx  | Server Error              |
 
-# MIME
+# Headers
+
+## MIME
 **Multipurpose Internet Mail Extensions** - стандарт, описывающий передачу различных типов данных `multipart/mixed`
