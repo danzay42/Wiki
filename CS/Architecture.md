@@ -14,5 +14,5 @@ date: 2023-09-02
 
 # Типы
 - клиент-серверная [[Client-Server]]
-- p2p (peer-to-peer)
+- p2p (peer-to-peer) [[Distributed System]]
 - файл-серверная
