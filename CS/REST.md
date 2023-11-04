@@ -1,11 +1,11 @@
 # REST Architecture
 [Architectural Styles and the Design of Network-based Software Architectures](https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm)
 
-1. Client-Server
+1. Client-Server architecture
 2. Stateless
 3. Cacheable
 4. Uniform interface
-5. Layered system
+5. Layered system architecture
 6. Code on demand
 
 ```mermaid
