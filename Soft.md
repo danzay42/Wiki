@@ -42,13 +42,12 @@ dunstify
 
 # Soft
 ---
-
 - qbittorrent | fragments (gnome)
 - [entr](https://github.com/clibs/entr) (event notify test runner)
 - [bat-extras](https://github.com/eth-p/bat-extras/tree/master)
 - atuin (best serch for command history)
 - eva (calculator)
-
+- [Virtual Machine Manager](https://virt-manager.org/)
 - [pandoc](https://pandoc.org/)
 
 ## Terminal
