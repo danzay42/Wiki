@@ -110,8 +110,8 @@ https://suckless.org/
 [cli file explorer](https://github.com/sxyazi/yazi)
 [library](https://github.com/Librum-Reader/Librum)
 [bootable usb OS](https://www.ventoy.net/en/index.html)
-[pyshark](https://github.com/KimiNewt/pyshark)
 
+[pyshark](https://github.com/KimiNewt/pyshark)
 [python web scrapper](https://scrapy.org/)
 
 ## [Git](https://git-scm.com/book/en/v2)
