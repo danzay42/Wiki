@@ -98,6 +98,7 @@ Lazy (all plugins)-> Mason (nice lsp plugins)
 ## ALL
 https://suckless.org/
 
+[jq](https://jqlang.github.io/jq/)
 [camera_capture](https://github.com/weebney/webcamize) + [ffmpeg](https://ffmpeg.org/)
 [youtube_cli](https://github.com/yt-dlp/yt-dlp)
 [youtube_download](https://github.com/BKSalman/ytdlp-gui)
