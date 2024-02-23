@@ -114,6 +114,7 @@ https://suckless.org/
 
 [pyshark](https://github.com/KimiNewt/pyshark)
 [python web scrapper](https://scrapy.org/)
+[devcontainers](https://containers.dev/)
 
 ## [Git](https://git-scm.com/book/en/v2)
 - [lazygit](https://github.com/jesseduffield/lazygit)
