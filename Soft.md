@@ -3,6 +3,7 @@
 
 - [i3](https://i3wm.org/)
 - [qtile](https://qtile.org/) (python)
+- [hyprland](https://wiki.hyprland.org/)
 
 ## Status Bar
 - **polybar**
