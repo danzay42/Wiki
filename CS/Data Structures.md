@@ -22,7 +22,7 @@
 	- Suffix tree
 	- R-tree
 	- ...
-- Heap (Reversed tree)
+- Heap (Sorted Queue, Tree) ~~(Reversed tree)~~
 - Graph
 - Hash Table
 
