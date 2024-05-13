@@ -1,8 +1,7 @@
 ---
-tags: OSI
-title: 
-	- Сетевая модель
-	- The Open Systems Interconnection model
+tags:
+  - OSI
+title: Сетевая модель,The Open Systems Interconnection model
 aliases: 
 date: 2023-11-04
 ---
