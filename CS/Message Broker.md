@@ -43,7 +43,9 @@ p2 -- write --> q1 & q2 -- read --> c2
 | [[Message Broker#Kafka\|Kafka]]       | > 1e6     | yes                 | one-to-many            |     |
 | [[Message Broker#RabbitMQ\|RabbitMQ]] | ~ 50e3    | yes/no              | one-to-one/one-to-many |     |
 | [[Message Broker#Redis\|Redis]]       | < 1e6     | partial             | one-to-one/one-to-many |     |
-| NATSio                                |           |                     |                        |     |
+| NATS                                  |           | no                  |                        |     |
+
+M
 
 ## Kafka
 ### Особенности
@@ -86,3 +88,9 @@ p2 -- write --> q1 & q2 -- read --> c2
 ### Рекомендации
 - взаимодействие между микросервисами
 - данные в реальном времени
+
+
+# Источники
+https://gcore.com/learning/nats-rabbitmq-nsq-kafka-comparison/
+https://pavlo-lompas.medium.com/nats-as-an-alternative-to-kafka-and-rabbitmq-28e5321d5abf
+https://docs.nats.io/nats-concepts/overview/compare-nats
