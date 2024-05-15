@@ -32,11 +32,12 @@ p2 -- write --> q1 & q2 -- read --> c2
 [^1]: Количество сообщений в секунду обрабатываемых системой
 [^2]: Способность постоянно хранить данные и возможность их восстановить
 
-| Брокер                                | Scale[^1] | Data Persistent[^2] | Клиентские возможности |
-| ------------------------------------- | --------- | ------------------- | ---------------------- |
-| [[Message Broker#Kafka\|Kafka]]       | > 1e6     | yes                 | one-to-many            |
-| [[Message Broker#RabbitMQ\|RabbitMQ]] | ~ 50e3    | yes/no              | one-to-one/one-to-many |
-| [[Message Broker#Redis\|Redis]]       | < 1e6     | partial             | one-to-one/one-to-many | 
+| Брокер                                | Scale[^1] | Data Persistent[^2] | Клиентские возможности |     |
+| ------------------------------------- | --------- | ------------------- | ---------------------- | --- |
+| [[Message Broker#Kafka\|Kafka]]       | > 1e6     | yes                 | one-to-many            |     |
+| [[Message Broker#RabbitMQ\|RabbitMQ]] | ~ 50e3    | yes/no              | one-to-one/one-to-many |     |
+| [[Message Broker#Redis\|Redis]]       | < 1e6     | partial             | one-to-one/one-to-many |     |
+| NATSio                                |           |                     |                        |     |
 
 ## Kafka
 ### Особенности
