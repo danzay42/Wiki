@@ -45,7 +45,12 @@ p2 -- write --> q1 & q2 -- read --> c2
 | [[Message Broker#Redis\|Redis]]       | < 1e6     | partial             | one-to-one/one-to-many |     |
 | NATS                                  |           | no                  |                        |     |
 
-M
+| Message Queuing Model | Delivery Guarantee                        | Ordering Guarantee | Throughput                          | Persistence and Replayability       | Limitations                                                  |
+| --------------------- | ----------------------------------------- | ------------------ | ----------------------------------- | ----------------------------------- | ------------------------------------------------------------ |
+| NATS                  | At-most-once, At-least-once, Exactly-once | No/Yes             | Up to 3 million messages per second | No                                  | Limited ordering and delivery assurance, limited persistence |
+| RabbitMQ              | At-most-once, At-least-once               | Yes                | Up to 60,000 messages per second    | Persistent, but lacks Replayability | Limited scalability, no replayability                        |
+| NSQ                   | At-least-once                             | No                 | Up to 800,000 messages per second   | No                                  | Limited scalability and persistence, no replayability        |
+| Kafka                 | At-most-once, At-least-once, Exactly-once | Yes                | Up to 2 million messages per second | Yes                                 | Complex setup and management, not suitable for RPCs          |
 
 ## Kafka
 ### Особенности
