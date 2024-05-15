@@ -27,10 +27,11 @@ p1 -- write --> q1 -- read --> c1
 p2 -- write --> q1 & q2 -- read --> c2
 ```
 # Характеристики
-
-**Message queuing model**(Модель организации очереди сообщений): Как сообщения передаются между двумя сторонами? Это происходит по потоку или в очереди?
-Гарантия доставки: Всегда ли сообщения доставляются хотя бы один раз, или это не всегда так?
-Гарантия заказа: Доставляются ли сообщения в том порядке, в котором они были отправлены, или нет?
+- **Message queuing model**: How are messages passed between two parties? (Stream/Queue)
+- **Delivery guarantee**: Are messages always delivered at least once, or is this not always the case?
+- **Ordering guarantee**
+- **Throughput and latency**: How many messages can the platform handle, and how fast is the communication?
+- **Persistence and replayability**(постоянство и воспроизводимость): Does the platform store messages and allow for reprocessing if they were missed the first time?
 
 # Сравнение
 
