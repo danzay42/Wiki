@@ -146,3 +146,5 @@ sequenceDiagram
 - **User Agent**
 	Расширение роли **Client**
 
+# Ссылки
+https://habr.com/ru/articles/491116/
