@@ -3,7 +3,7 @@
  - Event-driven ^725ee5
  - Monolithic
  - Micro-kernel (Plugin)
- - Microservices
+ - [Microservices](https://microservices.io/patterns/microservices.html)
 
 # Типы
 - клиент-серверная [[Client-Server]]
