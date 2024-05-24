@@ -43,3 +43,16 @@ A(Клиенты) <--> B(Транспорт) <--> C(Ресурсы)
 - Правильное использование http-кодов ответов
 - принимать/отдавать всегда один и тот же формат упаковки, например json
 - сложные запросы `/api/v1/resources/{id}/property`
+
+# Security
+- https
+- OAuth2 -> WebAuthn
+- Leveled API Keys (разные токены на разные эндпоинты)
+- Implement Authorization (RBAC, ABAC, ...)
+- Rate Limiting
+- API Versioning (v1, v2, ...)
+- Allow Lists
+- OWASP API Security
+- API Gateway
+- Correct code error handling
+- Input data validation
