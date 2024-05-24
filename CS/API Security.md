@@ -1,0 +1,10 @@
+- https
+- OAuth2 -> WebAuthn
+- Leveled API Keys
+- impl Authorization
+	- RBAC
+	- ABAC
+	- ...
+- Rate limiting
+- API versioning
+- 
