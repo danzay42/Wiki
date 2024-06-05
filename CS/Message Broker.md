@@ -103,6 +103,6 @@ p2 -- write --> q1 & q2 -- read --> c2
 
 
 # Источники
-https://gcore.com/learning/nats-rabbitmq-nsq-kafka-comparison/
-https://pavlo-lompas.medium.com/nats-as-an-alternative-to-kafka-and-rabbitmq-28e5321d5abf
-https://docs.nats.io/nats-concepts/overview/compare-nats
+- https://gcore.com/learning/nats-rabbitmq-nsq-kafka-comparison/
+- https://pavlo-lompas.medium.com/nats-as-an-alternative-to-kafka-and-rabbitmq-28e5321d5abf
+- https://docs.nats.io/nats-concepts/overview/compare-nats
