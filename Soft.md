@@ -52,7 +52,7 @@ dunstify
 ## Terminal
 - [alacritty](https://github.com/alacritty/alacritty) | kitty
 - [starship](https://starship.rs/)
-- tmux | zellif
+- tmux | [zellij](https://zellij.dev/)
 - tput
 - history
 
