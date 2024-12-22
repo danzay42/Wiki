@@ -1,10 +1,16 @@
-# REST Architecture
+# RPC
+
+[Protocol Buffers](https://protobuf.dev/)
+[Apache Thrift](https://ru.wikipedia.org/wiki/Apache_Thrift)
+
+# REST
+## Architecture
 [Architectural Styles and the Design of Network-based Software Architectures](https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm)
 
 1. Client-Server architecture
 2. Stateless
-3. [[REST API#Cacheable]]
-4. [[REST API#Uniform interface]]
+3. [[API#Cacheable]]
+4. [[API#Uniform interface]]
 5. Layered system architecture
 6. Code on demand
 
@@ -15,7 +21,7 @@ A(Клиенты) <--> B(Транспорт) <--> C(Ресурсы)
 
 > Обычно под REST API подразумевают транспорт в виде: [[HTTP]] + JSON
 
-# Uniform interface
+## Uniform interface
 
 | [[HTTP#Методы\|method]] | URI               | CRUD                          |
 | ----------------------- | ----------------- | ----------------------------- |
@@ -25,14 +31,14 @@ A(Клиенты) <--> B(Транспорт) <--> C(Ресурсы)
 | PUT/PATCH               | `/resources/{id}` | обновить ресурс               |
 | GET                     | `/resources`      | получить все доступные ресурс |
 
-# Cacheable
+## Cacheable
 
 | Кешируемые | Не кешируемые |
 | ---------- | ------------- |
 | GET        | PUT           |
 | POST       | DELETE        |
 
-# Best Practice
+## Best Practice
 - конечные точки URL (endpoints) - существительные (ресурсы) `/resources/{id}`
 - множественное число `/resources`
 - документация ([Swagger/OpenAPI](https://swagger.io/))
@@ -44,7 +50,8 @@ A(Клиенты) <--> B(Транспорт) <--> C(Ресурсы)
 - принимать/отдавать всегда один и тот же формат упаковки, например json
 - сложные запросы `/api/v1/resources/{id}/property`
 
-# Security
+##
+Security
 - https
 - OAuth2 -> WebAuthn
 - Leveled API Keys (разные токены на разные эндпоинты)
