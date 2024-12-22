@@ -74,6 +74,7 @@ p2 -- write --> q1 & q2 -- read --> c2
 - Сохранность всех сообщений 
 
 ## RabbitMQ
+[Best Practices](https://www.cloudamqp.com/blog/part1-rabbitmq-best-practice.html)
 ### Особенности
 - Гибкая маршрутизация и долговечность
 - Удаляет сообщение после доставки
