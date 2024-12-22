@@ -55,7 +55,7 @@ Security
 - https
 - OAuth2 -> WebAuthn
 - Leveled API Keys (разные токены на разные эндпоинты)
-- [Implement Authorization](https://habr.com/ru/companies/custis/articles/248649/) (RBAC, ABAC, ...)
+- [Implement Authorization](https://habr.com/ru/companies/custis/articles/248649/) (RBAC, ABAC, [LDAP(Microsoft)](https://offsec.almond.consulting/ldap-authentication-in-active-directory-environments.html), ...)
 - Rate Limiting
 - API Versioning (v1, v2, ...)
 - Allow Lists
