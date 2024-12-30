@@ -1,6 +1,6 @@
 # RPC
 
-[Protocol Buffers](https://protobuf.dev/)
+[Protocol Buffers](https://protobuf.dev/) -> [gRPC](https://grpc.io/)
 [Apache Thrift](https://ru.wikipedia.org/wiki/Apache_Thrift)
 
 # REST
