@@ -65,15 +65,14 @@
 - OpenTelemetry
 
 **Метрики**
-- Prometheus
-- Sentry
+- [Prometheus](https://prometheus.io/) - [PromQL](https://prometheus.io/docs/prometheus/latest/querying/basics/)
+- [Sentry](https://github.com/getsentry/sentry)
 
 **Дашборды**
-- Grafana
+- [Grafana](https://grafana.com/) - [LogQL](https://grafana.com/docs/loki/latest/logql/)
 
 ## Prometheus
 
-[#PromQL](https://prometheus.io/docs/prometheus/latest/querying/basics/)
 Структура метрики: `myMetric{...myLabels}`
 `myLabels` - список пар `key="value"`
 > желательно иметь наименьшее количество уникальных метрик
@@ -87,6 +86,3 @@
 	*Гистограмма*: несколько временных рядов - совокупные счетчики для бакетов, сумма наблюдаемых значений и общий счетчик событий
 - **Summary**
 	*Сводка* похожа на гистограмму (показывает сумму наблюдаемых значений и счетчик для событий), но также предоставляет расчет для **φ-квантилей**
-
-## Grafana
-[#LogQL](https://grafana.com/docs/loki/latest/logql/)
