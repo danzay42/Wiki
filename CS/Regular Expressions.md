@@ -7,7 +7,10 @@ aliases:
 - RegExpr
 date: 2023-08-19
 ---
-
+- [regexper](https://regexper.com/)
+- [regex101](https://regex101.com/)
+- [regexr](https://regexr.com/)
+- [myregexp](https://myregexp.com/)
 
 # Базовая форма
 
@@ -85,8 +88,9 @@ date: 2023-08-19
 | `(?P<name>...)` | именованная группа python                           |
 |    `(?=...)`    | positive lookahead (позитивный просмотр вперед)     |
 |    `(?!...)`    | negative lookahead (негативный просмотр вперед)     |
+# Примеры
+- [email](https://emailregex.com/)
 # Проблемы
-
 [ReDoS](https://owasp.org/www-community/attacks/Regular_expression_Denial_of_Service_-_ReDoS)
 
 ---
