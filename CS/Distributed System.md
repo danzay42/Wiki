@@ -47,3 +47,4 @@ flowchart TD
 
 # Raft Algorithm
 https://raft.github.io/
+https://thesecretlivesofdata.com/raft/
