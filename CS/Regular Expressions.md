@@ -85,6 +85,9 @@ date: 2023-08-19
 | `(?P<name>...)` | именованная группа python                           |
 |    `(?=...)`    | positive lookahead (позитивный просмотр вперед)     |
 |    `(?!...)`    | negative lookahead (негативный просмотр вперед)     |
+# Проблемы
+
+[ReDoS](https://owasp.org/www-community/attacks/Regular_expression_Denial_of_Service_-_ReDoS)
 
 ---
 # Globbing
